@@ -6,7 +6,7 @@ import {
   setTheme, setUser,
 } from './settings.actions'
 import { createTheme } from '@mui/material'
-import {Message} from "~shared/types";
+import { Message } from '~shared/types'
 
 export interface SettingsState {
   prefersDarkMode: boolean
@@ -27,7 +27,4 @@ export const settingsStateReducer = reducerWithInitialState(INITIAL_SETTINGS_STA
   })
   .case(setTheme, (state, theme) => {
     return ({ ...state, theme })
-  })
-  .case(setUser, (state, user) => {
-    return ({ ...state, user })
   })

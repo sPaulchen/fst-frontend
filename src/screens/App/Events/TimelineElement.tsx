@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { makeStyles } from '@mui/styles'
 import { Theme, Typography, Link } from '@mui/material'
 
-import { DotObject } from './DashboardComponent'
+import { DotObject } from './EventComponent'
 import { getTheme } from '~store/settings/settings.selectors'
 
 interface Props {

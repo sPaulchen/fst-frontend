@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   extends: [
     'eslint:recommended',
@@ -20,32 +20,28 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
     'react',
     '@typescript-eslint',
-    'standard'
+    'standard',
   ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/explicit-function-return-type': ['off'],
     '@typescript-eslint/member-delimiter-style': ['error', {
-      "multiline": {
-        "delimiter": "none",
-        "requireLast": true
+      multiline: {
+        delimiter: 'none',
+        requireLast: true,
       },
-      "singleline": {
-          "delimiter": "comma",
-          "requireLast": false
-      }
+      singleline: {
+        delimiter: 'comma',
+        requireLast: false,
+      },
     }],
-    // core no-use-before-define has to be turned off to prevent errors
-    // see also: https://github.com/typescript-eslint/typescript-eslint/issues/2540#issuecomment-692505191
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error',
-  }
+  },
 }

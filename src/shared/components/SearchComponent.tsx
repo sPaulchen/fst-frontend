@@ -6,16 +6,24 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { Grid, InputAdornment, TextField } from '@mui/material'
+import { Grid, InputAdornment, TextField, Theme } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
+import { makeStyles } from '@mui/styles'
 
 interface Props {
   disabled?: boolean
   changeSearch?: (searchInput: string) => void
 }
 
+const useStyles = makeStyles((theme: Theme) => ({
+  search: {
+    margin: theme.spacing(4),
+  },
+}))
+
 const SearchComponent: React.FC<Props> = (props) => {
   const { t } = useTranslation()
+  const classes = useStyles()
 
   const [searchInput, setSearchInput] = useState<string>('')
   const disabled = props.disabled ? props.disabled : false
@@ -29,6 +37,7 @@ const SearchComponent: React.FC<Props> = (props) => {
   return (
     <Grid item xs={12}>
       <TextField
+        className={classes.search}
         disabled={disabled}
         id='search'
         autoFocus

@@ -10,8 +10,3 @@ export const getTheme = createSelector(
   (state: SettingsRootState) => state.settingsStore.theme,
   (state) => state,
 )
-
-export const getUser = createSelector(
-  (state: SettingsRootState) => state.settingsStore.user,
-  (state) => state,
-)

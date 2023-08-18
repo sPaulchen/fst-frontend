@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+
+        <title>Meine Familie Website-Vorlage</title>
+        <link rel="shortcut icon" href="//csite.nicepage.com/favicon.ico" type="image/x-icon">
+        <meta charset="utf-8" />
+        <meta name="Keywords" content=" ">
+        <meta name="Description" content="Meine Familie. Professionell Website-Vorlage. Reaktionsschnell, vollständig anpassbar mit einfachem Drag-and-Drop-Editor. Sie können es für Themen wie Familie, Kind, Liebe, Glück, Jungen verwenden. Kategorien: Kunstdesign, Über uns.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nicepage.com/de/st/180339/meine-familie-website-vorlage">
+        <meta property="og:title" content="Meine Familie Website-Vorlage">
+        <meta property="og:image" content="https://images01.nicepagecdn.com/page/18/03/de/html-vorlage-180339.jpg?version=2b7257d2-808d-4779-850b-a5984949ca77">
+                        <meta property="og:description" content="Meine Familie. Professionell Website-Vorlage. Reaktionsschnell, vollständig anpassbar mit einfachem Drag-and-Drop-Editor. Sie können es für Themen wie Familie, Kind, Liebe, Glück, Jungen verwenden. Kategorien: Kunstdesign, Über uns.">
+        <meta property="og:site_name" content="Nicepage.com" />
+
+        
+        <link rel="preload" href="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-spreview-180339.webp" as="image" type="image/webp" media="(max-width: 450px)">
+    <link rel="preload" href="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-preview-180339.webp" as="image" type="image/webp" media="(min-width: 451px)">
+
+
+        
+        
+                <link rel="alternate" hreflang="en" href="https://nicepage.com/st/180339/my-family-website-template">
+        <link rel="alternate" hreflang="de" href="https://nicepage.com/de/st/180339/meine-familie-website-vorlage">
+        <link rel="alternate" hreflang="nl" href="https://nicepage.com/nl/st/180339/mijn-familie-website-sjabloon">
+        <link rel="alternate" hreflang="fr" href="https://nicepage.com/fr/st/180339/ma-famille-modele-site">
+        <link rel="alternate" hreflang="it" href="https://nicepage.com/it/st/180339/la-mia-famiglia-modello-web">
+        <link rel="alternate" hreflang="es" href="https://nicepage.com/es/st/180339/mi-familia-plantilla-web">
+        <link rel="alternate" hreflang="pl" href="https://nicepage.com/pl/st/180339/moja-rodzina-szablon-internetowej">
+        <link rel="alternate" hreflang="pt" href="https://nicepage.com/pt/st/180339/minha-familia-modelo-site">
+        <link rel="alternate" hreflang="tr" href="https://nicepage.com/tr/st/180339/ailem-web-sitesi-sablonu">
+        <link rel="alternate" hreflang="ru" href="https://nicepage.com/ru/st/180339/moya-semya-shablon-sayta">
+        <link rel="alternate" hreflang="hu" href="https://nicepage.com/hu/st/180339/az-en-csaladom-weboldal-sablon">
+        <link rel="alternate" hreflang="cs" href="https://nicepage.com/cs/st/180339/moje-rodina-sablona-webove-stranek">
+        <link rel="alternate" hreflang="sv" href="https://nicepage.com/sv/st/180339/min-familj-webbplats-mall">
+
+
+
+
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
+    <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font" />
+
+
+
+
+
+<script>
+    window.isAuthenticated = 0;
+    window.clientUserId = 0;
+    window.clientUserName = '';
+    window.userCountryCode = '';
+    window.logPageEvent = 1;
+    window.userHasAdsParams = 1;
+    window.utmSourceFromReferrer = 1;
+    window.currentLang = 'de';
+    window.baseUrl = 'website-templates';
+    window.currentUrl = '';
+    window.np_userId = '';
+    window.isAmplitudeInitialized = false;
+    window.sha256Email = '';
+
+    function sendAnalyticsData(eventType, props, cb) {
+        var json = { data: {} };
+        json.userToken = np_userId;
+        json.data.adsParams = $.cookie('AdsParameters');
+        json.data.ga = $.cookie('_ga');
+        json.data.gac = $.cookie('_gac_UA-88868916-2');
+        json.data.userAgent = navigator.userAgent;
+        json.data.eventType = eventType;
+        json.data.props = props;
+        $.ajax({
+            'type': 'POST',
+            'url': '/Feedback/SendAdsLog',
+            'contentType': 'application/json; charset=utf-8',
+            'data': JSON.stringify(json),
+            'dataType': 'json',
+            'complete': cb || function() {}
+        });
+    }
+
+    function initializeAmplitudeUser() {
+        if (isAmplitudeInitialized) {
+            return;
+        }
+        isAmplitudeInitialized = true;
+
+        if (clientUserId > 0)
+        {
+            identifyAmplitudeUser(clientUserId, clientUserName);
+        }
+        else
+        {
+            identifyAmplitudeUser(null);
+        }
+    }
+
+    function sendAmplitudeAnalyticsData(eventName, eventProperties, userProperties, callback_function) {
+        initializeAmplitudeUser();
+
+        if (userProperties) {
+            if(userProperties.utm_source || userProperties.utm_campaign) {
+                var identify = new amplitude.Identify();
+                identify.setOnce("utm_campaign", userProperties.utm_campaign);
+                identify.setOnce("utm_source", userProperties.utm_source);
+                identify.setOnce("utm_content", userProperties.utm_content);
+                identify.setOnce("utm_term", userProperties.utm_term);
+                identify.setOnce("utm_page", userProperties.utm_page);
+                identify.setOnce("utm_page2", userProperties.utm_page);
+                identify.setOnce("referrer", userProperties.referrer);
+
+                amplitude.getInstance().identify(identify);
+
+                userProperties.utm_source_last = userProperties.utm_source;
+                userProperties.utm_campaign_last = userProperties.utm_campaign;
+                userProperties.utm_content_last = userProperties.utm_content;
+                userProperties.utm_term_last = userProperties.utm_term;
+                userProperties.utm_page_last = userProperties.utm_page;
+            }
+
+            var userProps = objectWithoutProperties(userProperties, ["utm_campaign", "utm_source","utm_content", "utm_term", "utm_page", "referrer"]);
+            amplitude.getInstance().setUserProperties(userProps);
+        }
+
+        eventProperties.WebSite = 'true';
+        eventProperties.IsAuthenticated = window.isAuthenticated;
+        eventProperties.country_code = getCountryCode();
+        eventProperties.lang = window.currentLang || '';
+
+        var fullPageUrl = window.location.pathname.split('?')[0];
+        eventProperties.full_page_url = fullPageUrl;
+        eventProperties.page_url = clearPageUrl(fullPageUrl);
+
+        if (typeof callback_function === 'function') {
+            amplitude.getInstance().logEvent(eventName, eventProperties, callback_function);
+        } else {
+            amplitude.getInstance().logEvent(eventName, eventProperties);
+        }
+    }
+
+    function identifyAmplitudeUser(userId, token) {
+        if (userId) {
+            amplitude.getInstance().setUserProperties({
+                "Token": token,
+                "UserId": userId
+            });
+        }
+
+        var identify = new amplitude.Identify();
+        amplitude.getInstance().identify(identify);
+        if (userId) {
+            amplitude.getInstance().setUserId(userId);
+        }
+    }
+
+    function sendAnalyticsFromUrl(referrer, pageType) {
+        var hash = window.location.hash;
+
+        var urlIsAvailable = typeof URL === "function" || (navigator.userAgent.indexOf('MSIE') !== -1 && typeof URL === 'object');
+        if (!urlIsAvailable) {
+            return;
+        }
+
+        var url = new URL(window.location.href);
+        if (hash && hash.indexOf('utm_') >= 0) {
+            url = new URL(window.location.origin + window.location.pathname + hash.replace('#', '?'));
+        }
+
+        if (!url.searchParams) {
+            return;
+        }
+
+        var utmParams = getUtmParams(url);
+        var gclidFromUrl = utmParams.gclid;
+        var utmParamsFromUrl = !!utmParams.utmSource || !!utmParams.utmCampaign || !!utmParams.gclid;
+        if (!utmParamsFromUrl && userHasAdsParams)
+        {
+            utmParams = getUtmParamsFromCookie();
+        }
+
+        var canLog = canLogToAmplitude();
+        if (utmParamsFromUrl || utmSourceFromReferrer) {
+            var fullPageUrl = window.location.pathname.split('?')[0];
+            var pageUrl = clearPageUrl(fullPageUrl);
+            var userProps = {
+                "utm_source": utmParams.utmSource,
+                "utm_campaign": utmParams.utmCampaign,
+                "utm_content": utmParams.utmContent,
+                "utm_term": utmParams.utmTerm,
+                "utm_page": getUtmPageValue(pageUrl),
+                "utm_lang": window.currentLang || '',
+                "referrer": referrer
+            };
+
+            if (gclidFromUrl) {
+                var landingUrl = pageUrl.startsWith('/') && pageUrl !== '/' ? pageUrl.substr(1) : pageUrl;
+                userProps.landing_page = landingUrl;
+
+                var event = {
+                    'Page': landingUrl,
+                    'Url': window.location.href,
+                    'utm_campaign_event': utmParams.utmCampaign
+                }
+                sendAmplitudeAnalyticsData('Landing Page', event, userProps);
+            } else {
+                var eventProps = {
+                    "utm_source": utmParams.utmSource,
+                    "utm_campaign": utmParams.utmCampaign,
+                    "utm_content": utmParams.utmContent,
+                    "utm_term": utmParams.utmTerm
+                };
+
+                if (utmParams.utmSource === "elastic") {
+                    sendAmplitudeAnalyticsData('Email Click', eventProps);
+                }
+
+                if (canLog) {
+                    sendAmplitudeAnalyticsData('Campaign', eventProps, userProps);
+                }
+            }
+        }
+
+        if (logPageEvent && canLog || (pageType === 'Pricing Page' && !window.isForbiddenCountry())) {
+            var pageEventProps = {
+                'type': pageType,
+                'accepted_country': isValidCountry(),
+                'force_log': !canLog
+            };
+
+            sendAmplitudeAnalyticsData('Page View', pageEventProps);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        setCountryCode('https://location.nicepagesrv.com/country');
+        setUserIdCookie();
+        updatePageViewCounter();
+
+        if (typeof gtag === 'function' && typeof canSendViewConversion === 'function' && window.isAuthenticated && canSendViewConversion()) {
+            if (sha256Email) {
+                gtag('set', 'user_data', { 'sha256_email_address': sha256Email });
+            }
+            //Event snippet for 2 Page View conversion page
+            gtag('event', 'conversion', { 'send_to': 'AW-797221335/GbWrCJ6Ht5wYENfDkvwC', 'transaction_id': clientUserId });
+
+            setAdsPageViewCookie();
+        }
+
+        var referrer = 'www.google.com';
+        var pageType = 'Block Detail Page';
+        sendAnalyticsFromUrl(referrer, pageType);
+
+        if (location.href.indexOf('/frame/') === -1) {
+            PureCookie.initCookieConsent({
+                description: 'By using this website, you automatically accept that we use cookies. Learn more about our ',
+                link: '<a href="https://nicepage.com/Privacy" target="_blank"> privacy and cookies policy</a>.',
+                buttonCaption: "Accept",
+                opacity: 0.88,
+            });
+        }
+    });
+</script>
+
+<!--
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-KGP3NM3':true});</script>
+-->    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-797221335"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        var options = {};
+        var awOptions = { 'allow_enhanced_conversions': true };
+        if (clientUserId > 0) {
+            options.user_id = clientUserId;
+            awOptions.user_id = clientUserId;
+        }
+        // gtag('config', 'GA_TRACKING_ID', { 'optimize_id': 'OPT_CONTAINER_ID'});
+        gtag('config', 'AW-797221335', awOptions);
+        gtag('config', 'G-T7WWB0T53W', options);
+    </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            if(window.hideFacebookPixelCode !== true) {
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '251025992170426', {
+                    em: ''
+                });
+                fbq('track', 'PageView');
+            }
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=251025992170426&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->
+
+<!-- Amplitude Code -->
+<script type="text/javascript">
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+            ;r.type="text/javascript"
+            ;r.integrity="sha384-d/yhnowERvm+7eCU79T/bYjOiMmq4F11ElWYLmt0ktvYEVgqLDazh4+gW9CKMpYW"
+            ;r.crossOrigin="anonymous";r.async=true
+            ;r.src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"
+            ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
+                console.log("[Amplitude] Error: could not load SDK")}}
+            ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+            ;function s(e,t){e.prototype[t]=function(){
+            this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+        var o=function(){this._q=[];return this}
+            ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+            ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+                ;return this}
+            ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+            ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+            ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+            ;function v(e){function t(t){e[t]=function(){
+                e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+            for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+                e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+                    ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+            ;e.amplitude=n})(window,document);
+    amplitude.getInstance().init("878f4709123a5451aff838c1f870b849");
+</script>
+
+<script>
+var shareasaleSSCID=shareasaleGetParameterByName("sscid");function shareasaleSetCookie(e,a,r,s,t){if(e&&a){var o,n=s?"; path="+s:"",i=t?"; domain="+t:"",S="";r&&((o=new Date).setTime(o.getTime()+r),S="; expires="+o.toUTCString()),document.cookie=e+"="+a+S+n+i+"; SameSite=None;Secure"}}function shareasaleGetParameterByName(e,a){a||(a=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var r=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(a);return r?r[2]?decodeURIComponent(r[2].replace(/\+/g," ")):"":null}shareasaleSSCID&&shareasaleSetCookie("shareasaleSSCID",shareasaleSSCID,94670778e4,"/");
+</script>
+
+
+
+
+
+
+<script src="//capp.nicepage.com/d1b976b6a197321cfdb78c1d5d92b9cf90aac412/template-detail-libs.js" defer></script>
+<link href="//capp.nicepage.com/d1b976b6a197321cfdb78c1d5d92b9cf90aac412/template-detail-libs.css" rel="stylesheet" />
+
+
+<!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+
+
+        
+        
+
+        
+    <link rel="canonical" href="https://nicepage.com/de/st/180339/meine-familie-website-vorlage" />
+    
+    <script>
+        function sendLogToAmplitude(eventName, eventProps) {
+            if (canLogToAmplitude()) {
+                sendAmplitudeAnalyticsData(eventName, eventProps);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Click outside of the modal and close it
+            window.onclick = function (e) {
+                if ($(e.target).is('.modal')) {
+                    closeModal($(e.target));
+                }
+            };
+            // Use the escape key to close modal
+            document.onkeyup = function (e) {
+                e = e || window.event;
+                if (e.keyCode == 27 && $('.modal--show').length === 1) {
+                    closeModal($('.modal--show'));
+                }
+            };
+
+            var eventProps = {'Route': 'website-templates', 'Id': 180339, 'PageType': 'Block Detail Page', 'Lang': 'de'};
+
+            var sendData = function(action, cb) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'Download');
+                }
+
+                var cbCounter = 0;
+
+                function cbWithCounter() {
+                    cbCounter++;
+                    if (cbCounter === 2 && cb) {
+                        cb();
+                    }
+                }
+
+                if (typeof sendAnalyticsData === 'function') {
+                    sendAnalyticsData(action !== 'edit-online' ? 'download' : 'edit-online', eventProps, cbWithCounter);
+                }
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'download', { 'event_category': action, 'event_callback': cbWithCounter });
+                } else {
+                    cbCounter++;
+                }
+            }
+
+            var sendAnalyticOrTimeout = decorateTimeout(sendData, 3000);
+
+            $('.mac-download').click(function (e) {
+                e.preventDefault();
+
+                eventProps.AppName = 'mac-app';
+                sendLogToAmplitude('Download', eventProps);
+
+                showModal("sec-mac-download");
+                showDownloadHint();
+
+                sendAnalyticOrTimeout('mac-app', function () {
+                    window.location = '/get/mac/';
+                });
+            });
+
+            $('.win-download').click(function (e) {
+                e.preventDefault();
+
+                eventProps.AppName = 'win-app';
+                sendLogToAmplitude('Download', eventProps);
+
+                showModal("sec-win-download");
+                showDownloadHint();
+
+                sendAnalyticOrTimeout('win-app', function () {
+                    window.location = '/get/windows/';
+                });
+            });
+
+            $('.edit-online-btn, .edit-online-link').click(function (e) {
+                e.preventDefault();
+
+                eventProps.AppName = 'online';
+                sendLogToAmplitude('Template Edit Online', eventProps);
+
+                sendAnalyticOrTimeout('edit-online', function () {
+                    window.location = '/Editor/Dashboard/EditOnline/180339';
+                });
+            });
+        });
+    </script>
+
+    <style>
+        h1 {
+            text-transform: capitalize;
+            font-size: 32px;
+            margin: 10px 0 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .download-btn-container {
+            padding-bottom: 10px;
+        }
+
+        .preview-row .media-image {
+            border: none;
+            aspect-ratio: attr(width) / attr(height);
+        }
+
+        .preview-row {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .preview-row img,
+        .preview-row .hover-like-lightbox {
+            display: inline-block;
+        }
+
+        .preview-row .hover-like-lightbox {
+            overflow: visible;
+        }
+
+        .hover-like-lightbox:hover:after {
+            display: block;
+            content: "";
+            background: rgba(0, 0, 0, .2) 100% 100% no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .mockup-shadow {
+            max-width: 100%;
+        }
+
+        .mockup-shadow:before {
+            bottom: 0;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, .3);
+            display: block;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .small-icon {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .u-icon {
+            vertical-align: middle;
+            height: 40px;
+            display: inline-block;
+        }
+
+        .icon-g {
+            fill: #999;
+            width: 48px;
+            height: 48px;
+            position: relative;
+            top: 8px;
+            margin-right: 12px;
+        }
+
+        .page-description-block {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.75;
+            text-align: left;
+        }
+
+        .auth-page-description-block {
+            line-height: 1.75;
+            font-size: 14px;
+        }
+
+        .page-subtitle {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        .page-description-block h3 {
+            margin-bottom: 20px;
+        }
+
+        .win-download,
+        .mac-download,
+        .edit-online-btn {
+            color: #fff;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 1.4;
+            display: inline-block;
+        }
+
+        .top-btn {
+            margin: 0 0 20px 0;
+        }
+
+        @media (min-width: 991px) and (max-width: 1200px) {
+            .win-download, .mac-download, .edit-online-btn {
+                padding: 10px 26px;
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .win-download, .mac-download, .edit-online-btn {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+        }
+
+
+        .mac-download {
+            margin-left: 10px;
+            background-color: #4399fa;
+            border-color: #4399fa;
+        }
+
+        .mac-download:hover, .mac-download:focus {
+            color: #fff;
+            background-color: #2e8dfa;
+            border-color: #2e8dfa;
+        }
+
+        .win-download {
+            background-color: #f15048;
+            border-color: #f15048;
+        }
+
+        .win-download:hover, .win-download:focus {
+            color: #fff;
+            background-color: #ef342b;
+            border-color: #ef342b;
+        }
+
+        .edit-online-btn {
+            margin-left: 10px;
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+        }
+        .edit-online-btn.top-btn {
+            margin: 0 0 20px 0;
+            max-width: 335px;
+            width: 100%;
+        }
+
+        .edit-online-btn:hover, .edit-online-btn:focus {
+            color: #fff;
+            background-color: #4bad4b;
+            border-color: #4bad4b;
+        }
+
+        .feature-icon-label {
+            vertical-align: -0.17em;
+            margin-left: 10px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1280px) {
+            #register-input {
+                width: 150px;
+                font-size: 16px;
+                padding: 6px;
+            }
+
+            #register-btn {
+                font-size: 16px;
+                border: none;
+                padding: 7px 12px;
+                font-weight: 700;
+            }
+
+            .feature-icon-label {
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+
+        .u-svg-link {
+            fill: #f15048;
+            height: 40px;
+            width: 40px;
+            color: #f15048;
+            position: relative;
+        }
+
+        .u-svg-content {
+            width: 0;
+            height: 0;
+        }
+
+        .right-feature-column {
+            padding: 0 10px;
+        }
+
+        @media (max-width: 992px) {
+            .right-feature-column {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .right-feature-column {
+                padding-top: 10px;
+            }
+        }
+
+        .details-keywords {
+            margin-left: -10px;
+        }
+
+        .details-keywords a {
+            display: inline-block;
+            padding: 2px 10px;
+            margin: 0 0 5px 10px;
+            font-size: 13px;
+            color: #777;
+            border: 1px solid #cecece;
+            border-radius: 20px;
+            text-transform: lowercase;
+            transition: .2s;
+        }
+
+        .details-keywords a:hover {
+            text-decoration: none;
+            color: #337ab7;
+            border-color: #337ab7;
+        }
+
+        .details-keywords i {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .customize-np-block {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .modal .container-layout {
+            padding: 20px;
+        }
+
+        .modal .u-text {
+            font-size: 28px;
+            margin: 20px auto 0;
+        }
+    </style>
+
+
+
+        <!--meta name="google-site-verification" content="91O3bL1ryXysP925e_KKodKSsrpDCHTmgGeH0IA-NbA" /-->
+<!— Pinterest Tag —>
+<!--
+<script>
+!function(e){if(!window.pintrk){window.pintrk = function () {
+window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+      n=window.pintrk;n.queue=[],n.version="3.0";var
+      t=document.createElement("script");t.async=!0,t.src=e;var
+      r=document.getElementsByTagName("script")[0];
+      r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '2619058937406', {em: '<user_email_address>'});
+pintrk('page');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt=""
+      src="https://ct.pinterest.com/v3/?tid=2619058937406&pd[em]=<hashed_email_address>&noscript=1" />
+</noscript>
+-->
+<!— end Pinterest Tag —>
+
+        
+
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function () {
+                if (typeof IOlazy === 'function') {
+                    var lazy = new IOlazy();
+                }
+            });
+        </script>
+        
+
+    </head>
+    <body>
+
+        
+
+
+        <div class="wrap wrap-fluid">
+            <div id="top-navbar" class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand clearfix" href="https://nicepage.com"><img class="pull-left" width="123" height="40" alt="Nicepage.com" src="//csite.nicepage.com/Images/logo-w.png" /></a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="logon-block nav navbar-nav nav-list navbar-left u-unstyled" style="font-size: 14px;">
+                            <li class="dropdown">
+                                <a href="/download">Herunterladen</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/features">300+ Funktionen</a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle template-menu-item" href="/de/html-vorlagen">10,000+ Vorlagen
+    <span class="caret"></span></a>
+	<ul role="menu" class="dropdown-menu dropdown-menu-hover u-unstyled">
+	    <li><a href="/de/website-vorlagen" class="templates-url" data-urls="de/website-vorlagen;de/vorlagen">Website Vorlagen</a></li>
+	    <li><a href="/website-design">Website Designs</a></li>
+	    <li><a href="/de/wordpress-themen">WordPress Themes</a></li>
+	    <li><a href="/de/joomla-vorlagen">Joomla Vorlagen</a></li>
+	    <li><a href="/de/html-vorlagen" class="templates-url" data-urls="de/html-vorlagen;de/html5-vorlage;de/css-vorlagen">HTML Vorlagen</a></li>
+	</ul>
+</a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    Website-Ersteller
+                                    <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu dropdown-menu-hover u-unstyled">
+                                    <li><a class="builder-link" href="/html-website-builder">HTML Website Builder</a></li>
+                                    <li><a class="builder-link" href="/wordpress-website-builder">WordPress Website Builder</a></li>
+                                    <li><a class="builder-link" href="/joomla-page-builder">Joomla Page Builder</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/premium">Prämie</a>
+                            </li>
+                            <li><a href="/forum">Foren</a></li>
+                            <li class="dropdown">
+                                <a href="/blog">Blog</a>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Help<span class="caret"></span></a>
+                                <ul role="menu" class="dropdown-menu dropdown-menu-hover u-unstyled">
+                                    <li><a href="/doc">Dokumentation</a></li>
+                                    <!--li><a href="/live-demo">Planen Sie eine persönliche Demo</a></li-->
+                                    <li><a href="/Forum/Topic/Create">Kontaktieren Sie Support</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="logon-block nav navbar-nav nav-list navbar-right u-unstyled">
+                             
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DE <span class="caret"></span></a>
+                                        <ul class="dropdown-menu u-unstyled" role="menu">
+                                                <li><a href="/st/180339/my-family-website-template">EN</a></li>
+                                                <li><a href="/de/st/180339/meine-familie-website-vorlage">DE</a></li>
+                                                <li><a href="/nl/st/180339/mijn-familie-website-sjabloon">NL</a></li>
+                                                <li><a href="/fr/st/180339/ma-famille-modele-site">FR</a></li>
+                                                <li><a href="/it/st/180339/la-mia-famiglia-modello-web">IT</a></li>
+                                                <li><a href="/es/st/180339/mi-familia-plantilla-web">ES</a></li>
+                                                <li><a href="/pl/st/180339/moja-rodzina-szablon-internetowej">PL</a></li>
+                                                <li><a href="/pt/st/180339/minha-familia-modelo-site">PT</a></li>
+                                                <li><a href="/tr/st/180339/ailem-web-sitesi-sablonu">TR</a></li>
+                                                <li><a href="/ru/st/180339/moya-semya-shablon-sayta">RU</a></li>
+                                                <li><a href="/hu/st/180339/az-en-csaladom-weboldal-sablon">HU</a></li>
+                                                <li><a href="/cs/st/180339/moje-rodina-sablona-webove-stranek">CS</a></li>
+                                                <li><a href="/sv/st/180339/min-familj-webbplats-mall">SV</a></li>
+                                        </ul>
+                                    </li>
+
+
+<li><a href="/Editor/Account/LogOn">Sign In</a></li><li class="divider-vertical"></li><li><a href="https://nicepage.com/Editor/Account/Register">Register</a></li><li class="divider-vertical"></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <section id="" class="container">
+
+                
+                
+
+                
+
+                
+
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
+
+                <style>
+    .breadcrumb {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .breadcrumb > .active {
+        color: #666;
+    }
+</style>
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                    <li>
+                            <a href="https://nicepage.com" title="Zuhause">Zuhause</a>
+                    </li>
+                    <li>
+                            <a href="/de/website-vorlagen" title="Website-Vorlagen">Website-Vorlagen</a>
+                    </li>
+                    <li>
+                            <a href="/de/c/kunstdesign-website-vorlagen" title="Kunstdesign">Kunstdesign</a>
+                    </li>
+                    <li>
+Meine Familie                    </li>
+            </ol>
+        </div>
+    </div>
+
+                <h1>Meine Familie Website-Vorlage</h1>
+                <div style="margin-bottom: 20px; font-size: 14px;">
+                    Erstellen Sie eine professionelle kostenlose Website-Vorlage. Reaktionsschnell, vollständig anpassbar mit einfachem Drag-n-Drop-Nicepage-Editor. Passen Sie Farben, Schriftarten, Kopf- und Fußzeilen, Layout und andere Designelemente sowie Inhalte und Bilder an.
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <div class="pull-left">
+                        Ich würde <text>: </text>180339
+                            &nbsp; | &nbsp; 
+Kategorie                            : 
+<a href="/de/c/kunstdesign-website-vorlagen">Kunstdesign</a>, <a href="/de/c/ueber-uns-website-vorlagen">&#220;ber uns</a>                    </div>
+                    <div class="pull-right">
+                        <a href="/de/website-templates/preview/meine-familie-180339?device=desktop" target="_blank" class="demo-link" rel="nofollow">
+                            <div class="small-icon">
+                                <svg id="preview" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                                    <path fill="#808080" d="M12.6,11.8c0.4-0.6,0.7-1.3,0.7-2.2c0-2-1.6-3.7-3.7-3.7S6,7.6,6,9.7s1.6,3.7,3.7,3.7c0.8,0,1.5-0.3,2.2-0.7
+                                          l3.4,3.4l0.8-0.8C16,15.2,12.6,11.8,12.6,11.8L12.6,11.8z M9.7,12.2c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5
+                                          S11.1,12.2,9.7,12.2L9.7,12.2z" />
+                                    <polygon fill="none" points="8,4 8,1 1,1 1,15 11,15 11,15 3.5,15 3.5,5.5 11,5.5 11,4 " />
+                                    <polygon fill="#808080" points="11,15 1,15 1,1 8,1 8,4 11,4 11,5.5 12,5.5 12,3.4 8.3,0 0,0 0,16 12,16 12,14 11,14 " />
+                                </svg>
+                            </div>
+                            <span>Demo-Vorschau</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="preview-row">
+
+
+                    <a class="hover-like-lightbox mockup-shadow" href="/de/website-templates/preview/meine-familie-180339?device=desktop" rel="nofollow" target="_blank">
+                        <picture>
+                                <source srcset="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-spreview-180339.webp" type="image/webp" media="(max-width: 450px)">
+                                <source srcset="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-spreview-180339.jpg" type="image/jpeg" media="(max-width: 450px)">
+                            <source srcset="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-preview-180339.webp" type="image/webp">
+                            <source srcset="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-preview-180339.jpg" type="image/jpeg">
+                            <img alt="Meine Familie Website-Vorlage" class="media-image img-responsive noversion" height="404" src="https://images01.nicepagecdn.com/page/18/03/de/website-vorlage-preview-180339.jpg" style="" width="750" />
+                        </picture>
+                    </a>
+
+                </div>
+                <div style="text-align: center; padding: 20px 0 10px;">
+                    <a class="btn btn-lg win-download" href="#" type="button">Für Windows herunterladen</a>
+                    <a class="btn btn-lg mac-download" href="#" type="button">Für Mac herunterladen</a>
+                        <a class="btn btn-lg edit-online-btn" href="#" type="button">Online bearbeiten</a>
+                </div>
+                <div class="customize-np-block">
+                    <h2>Mit Nicepage anpassen</h2>
+                    <p>Wenn Sie <a href="/html">Website Template Builder</a> verwenden, können Sie Farben, Schriftarten, Kopf- und Fußzeilen, Layout, Spalten und andere Designelemente sowie Inhalte und Bilder anpassen.</p>
+                    <style>
+    .small-video {
+        display: none;
+    }
+    
+    @media (max-width: 450px) {
+        .small-video {
+            display: inline-block;
+        }
+        .big-video {
+            display: none;
+        }
+    }
+</style>
+<br/>
+<div>
+    <video class="big-video embed-responsive-item lazyload lazyloading" loop="" muted="" autoplay="autoplay" playsinline="" data-src="//csite.nicepage.com/Images/Site/editor.mp4?v2" style="/* border: 1px solid #ccc; */width: 100%;">
+        <source type="video/mp4">
+        <p>Your browser does not support HTML5 video.</p>
+    </video>
+    <video class="small-video embed-responsive-item lazyload lazyloading" loop="" muted="" autoplay="autoplay" playsinline="" data-src="//csite.nicepage.com/Images/Site/editor-420.mp4?v2" style="/* border: 1px solid #ccc; */width: 100%;">
+        <source type="video/mp4">
+        <p>Your browser does not support HTML5 video.</p>
+    </video>
+    <!--img data-src="//images02.nicepage.io/a122014e1e8cdf24af08f98c/4a7b6b7da99054fbb764a6d0/editor.gif?version=" class="lazyload" style="max-width: 100%;"/-->
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="margin-left: 10px;" class="hidden-sm hidden-xs">
+                    <a class="btn btn-lg win-download top-btn" href="#" type="button">Download<br/>for Windows</a>
+                    <a class="btn btn-lg mac-download top-btn" href="#" type="button">Download<br/>for Mac</a>
+                        <a class="btn btn-lg edit-online-btn top-btn" href="#" type="button">Online bearbeiten</a>
+                </div>
+                    <div style="text-align: center; padding: 20px 0;" class="visible-sm visible-xs">
+                        <a class="btn btn-lg win-download" href="#" type="button" rel="nofollow">Für Windows herunterladen</a>
+                        <a class="btn btn-lg mac-download" href="#" type="button" rel="nofollow">Für Mac herunterladen</a>
+                        <a class="btn btn-lg edit-online-btn" href="#" type="button" rel="nofollow">Online bearbeiten</a>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div style="margin-left: 10px;">
+                    <h3>Vorlage offline bearbeiten</h3>
+                    <div class="auth-page-description-block">
+                        1. Laden Sie die Nicepage-Version für Windows, Mac, WordPress und Joomla von <a href="/download">Download-Seite</a> herunter und installieren Sie sie.
+                        <br />
+2. Erstellen Sie eine neue Seite oder wählen Sie eine vorhandene aus                            <br />
+3. Klicken Sie auf Neuen Block hinzufügen, suchen Sie nach der ID <strong>180339</strong> und klicken Sie auf die Eingabetaste                    </div>
+                    <h3>Vorlage online bearbeiten</h3>
+                    <div class="auth-page-description-block">
+                        Starten Sie <a class="edit-online-link" href="#">edit online</a> diese Vorlage auf unserem Hosting
+                    </div>
+
+                    <div class="page-description-block">
+                        <h3>Erstellen Sie fantastische Websites</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img alt="WordPress Plugin" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-wp-32.png" />
+                                <span class="feature-icon-label">WordPress</span>
+                            </div>
+                            <div class="col-sm-6 right-feature-column">
+                                <img alt="Windows Application" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-windows-32.png" />
+                                <span class="feature-icon-label">Windows App</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-6">
+                                <img alt="Joomla Plugin" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-joomla-32.png" />
+                                <span class="feature-icon-label">Joomla</span>
+                            </div>
+                            <div class="col-sm-6 right-feature-column">
+                                <img alt="Mac OS Application" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-mac-32.png" />
+                                <span class="feature-icon-label">Mac OS App</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-6">
+                                <img alt="HTML5" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-html-32.png" />
+                                <span class="feature-icon-label">HTML5</span>
+                            </div>
+                            <div class="col-sm-6 right-feature-column">
+                                <img alt="Online Builder" width="32" height="32" src="//csite.nicepage.com/Images/Site/icon-online-32.png" />
+                                <span class="feature-icon-label">Online</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-description-block">
+                        <h3>Kostenloser Nicepage Builder</h3>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="u-icon">
+                                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 511.999 511.999"><use xlink:href="#svg-d890"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-d890" x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background: new 0 0 511.999 511.999;" xml:space="preserve" class="u-svg-content"><g>
+                                    <g><path d="M453.034,361.322c-2.808-1.164-6.04-0.521-8.19,1.628l-82.126,82.126c-2.149,2.15-2.792,5.382-1.628,8.19    c1.162,2.809,3.904,4.639,6.943,4.639h82.126c4.151,0,7.515-3.364,7.515-7.515v-82.126    C457.673,365.225,455.842,362.485,453.034,361.322z M386.173,442.876l56.469-56.469v56.469H386.173z"></path></g></g>
+                                    <g><g><path d="M507.361,240.867c-2.808-1.164-6.04-0.521-8.19,1.628l-22.507,22.507V111.971c0-4.151-3.365-7.515-7.515-7.515h-57.741    l20.96-20.96c0.003-0.003,0.006-0.007,0.009-0.01l20.196-20.196c4.327-4.327,6.71-10.083,6.71-16.203s-2.383-11.874-6.71-16.203    L429.219,7.53c-4.327-4.327-10.083-6.71-16.203-6.71s-11.875,2.383-16.203,6.71l-20.206,20.206l-24.416,24.416l-52.303,52.303    H66.62V30.11c0-4.151-3.365-7.515-7.515-7.515C26.515,22.597,0,49.11,0,81.702v319.186c0,0.555,0.064,1.095,0.178,1.615    c1.038,13.829,7.021,26.678,17.02,36.432C27.886,449.359,41.995,455.1,56.927,455.1h229.638l-43.249,43.249    c-2.149,2.15-2.792,5.381-1.629,8.19c1.163,2.808,3.904,4.639,6.943,4.639h255.855c4.15,0,7.515-3.364,7.515-7.515V247.81    C512,244.771,510.168,242.03,507.361,240.867z M407.443,18.159c3.072-3.074,8.077-3.074,11.149,0l23.355,23.355    c3.074,3.073,3.074,8.076,0,11.15l-14.891,14.892L392.55,33.051L407.443,18.159z M381.922,43.679l34.505,34.504l-13.789,13.789    l-34.503-34.504L381.922,43.679z M496.972,332.252h-13.865c-4.151,0-7.515,3.364-7.515,7.515c0,4.151,3.364,7.515,7.515,7.515    h13.865v22.646h-13.865c-4.151,0-7.515,3.364-7.515,7.515s3.364,7.515,7.515,7.515h13.865v22.645h-13.865    c-4.151,0-7.515,3.364-7.515,7.515c0,4.151,3.364,7.515,7.515,7.515h13.865v22.646h-13.865c-4.151,0-7.515,3.365-7.515,7.515    c0,4.151,3.364,7.515,7.515,7.515h13.865v35.842h-230.2l75.908-75.907c2.935-2.936,2.935-7.693,0-10.628    c-0.337-0.337-0.699-0.629-1.078-0.889c-2.926-2.004-6.952-1.709-9.551,0.889l-30.456,30.456H56.928    c-22.792,0-41.14-17.794-41.862-40.545c0.043-1.428,0.154-2.844,0.332-4.244c0.001-0.008,0.002-0.016,0.003-0.024    c0.084-0.665,0.185-1.327,0.3-1.985c0.013-0.075,0.027-0.15,0.04-0.225c0.105-0.587,0.223-1.171,0.352-1.753    c0.036-0.162,0.074-0.324,0.112-0.485c0.114-0.492,0.237-0.981,0.369-1.468c0.072-0.264,0.147-0.525,0.224-0.788    c0.11-0.382,0.224-0.763,0.345-1.14c0.121-0.377,0.25-0.75,0.381-1.123c0.091-0.261,0.181-0.522,0.279-0.781    c0.183-0.492,0.377-0.979,0.577-1.462c0.057-0.139,0.113-0.28,0.172-0.419c0.257-0.6,0.524-1.193,0.806-1.779    c0.012-0.025,0.023-0.05,0.035-0.075c5.878-12.164,17.183-21.233,30.75-24.047c0.038-0.008,0.076-0.017,0.114-0.025    c0.622-0.127,1.25-0.236,1.882-0.337c0.105-0.017,0.21-0.038,0.317-0.054c0.571-0.087,1.148-0.155,1.725-0.22    c0.162-0.018,0.323-0.043,0.486-0.059c0.557-0.056,1.119-0.093,1.681-0.128c0.178-0.011,0.356-0.03,0.534-0.039    c0.736-0.037,1.478-0.056,2.223-0.056c4.15,0,7.515-3.364,7.515-7.515v-54.489c0-4.151-3.365-7.515-7.515-7.515    c-4.15,0-7.515,3.364-7.515,7.515v47.447c-12.69,1.605-24.469,7.265-33.757,16.335c-0.977,0.954-1.903,1.946-2.805,2.954V81.702    c0-21.741,15.826-39.858,36.561-43.436v73.705v152.777v0.001c0,4.15,3.365,7.515,7.515,7.515c4.15,0,7.515-3.365,7.515-7.515    v-0.001V119.486h218.24l-41.544,41.544c-2.935,2.936-2.935,7.693,0,10.628c2.935,2.934,7.693,2.934,10.627,0l54.373-54.373    c0.002-0.002,0.003-0.004,0.005-0.005l49.185-49.185l34.503,34.505l-4.048,4.048c-0.003,0.003-0.007,0.006-0.01,0.009    l-151.528,151.53l-34.504-34.504l29.868-29.868c2.935-2.936,2.935-7.693,0-10.628c-2.935-2.934-7.693-2.934-10.627,0    l-35.183,35.182c-0.188,0.188-0.364,0.387-0.529,0.591c-0.055,0.068-0.104,0.141-0.156,0.212c-0.106,0.141-0.21,0.283-0.307,0.431    c-0.055,0.086-0.105,0.174-0.157,0.263c-0.083,0.14-0.163,0.282-0.236,0.427c-0.048,0.094-0.091,0.189-0.135,0.287    c-0.067,0.147-0.129,0.297-0.186,0.447c-0.02,0.053-0.046,0.103-0.065,0.156l-14.641,41.475l-9.982,28.279    c-0.132,0.376-0.227,0.758-0.298,1.143h-24.992c-4.15,0-7.515,3.364-7.515,7.515c0,4.151,3.365,7.515,7.515,7.515h208.114    c4.151,0,7.515-3.364,7.515-7.515c0-4.151-3.364-7.515-7.515-7.515H193.093l45.83-16.178c0.038-0.014,0.074-0.033,0.112-0.047    c0.178-0.066,0.353-0.14,0.526-0.219c0.069-0.032,0.138-0.062,0.205-0.095c0.18-0.09,0.357-0.189,0.531-0.295    c0.056-0.034,0.114-0.065,0.169-0.1c0.181-0.116,0.357-0.243,0.53-0.377c0.043-0.033,0.088-0.062,0.13-0.096    c0.209-0.168,0.414-0.349,0.608-0.543l154.644-154.643h65.255v160.546L354.137,387.53c-2.935,2.936-2.935,7.693,0,10.628    c0.183,0.183,0.374,0.355,0.571,0.516c1.378,1.123,3.061,1.685,4.743,1.685s3.366-0.562,4.743-1.685    c0.197-0.16,0.388-0.333,0.571-0.516c0.003-0.003,0,0,0.003-0.003L496.972,265.95V332.252z M222.677,265.696l-21.526,7.599    l-14.342-14.342l7.599-21.526L222.677,265.696z"></path></g></g>
+                                    </svg>
+                                </div>
+                                <span class="feature-icon-label">10,000+ Webvorlagen</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-12">
+                                <div class="u-icon">
+                                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"><use xlink:href="#svg-b020"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-b020" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve" class="u-svg-content">
+                                    <g><g><path d="M458.667,192H352c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h106.667c17.643,0,32,14.357,32,32    v213.333c0,17.643-14.357,32-32,32H245.333c-17.643,0-32-14.357-32-32v-85.333c0-5.888-4.779-10.667-10.667-10.667    S192,367.445,192,373.333v85.333C192,488.064,215.936,512,245.333,512h213.333C488.064,512,512,488.064,512,458.667V245.333    C512,215.936,488.064,192,458.667,192z"></path></g></g>
+                                    <g><g><path d="M160,298.667h-10.667c-5.888,0-10.667,4.779-10.667,10.667S143.445,320,149.333,320H160    c5.888,0,10.667-4.779,10.667-10.667S165.888,298.667,160,298.667z"></path></g></g>
+                                    <g><g><g>
+                                    <path d="M62.741,0h-9.408C48.235,0,43.2,0.725,38.357,2.133c-5.653,1.664-8.896,7.595-7.253,13.248     c1.365,4.651,5.632,7.659,10.24,7.659c1.003,0,2.005-0.128,3.008-0.427c2.901-0.853,5.909-1.28,8.981-1.28h9.408     c5.909,0,10.667-4.779,10.667-10.667S68.629,0,62.741,0z"></path>
+                                    <path d="M21.333,257.216v-21.568c0-5.888-4.779-10.667-10.667-10.667S0,229.76,0,235.648v21.568     c0,5.888,4.779,10.667,10.667,10.667S21.333,263.104,21.333,257.216z"></path>
+                                    <path d="M10.667,203.179c5.888,0,10.667-4.779,10.667-10.667v-21.568c0-5.888-4.779-10.667-10.667-10.667S0,165.056,0,170.944     v21.568C0,198.4,4.779,203.179,10.667,203.179z"></path>
+                                    <path d="M10.667,73.792c5.888,0,10.667-4.779,10.667-10.667v-9.792c0-2.965,0.405-5.888,1.195-8.704     c1.6-5.675-1.685-11.563-7.36-13.163c-5.632-1.685-11.563,1.664-13.163,7.36C0.683,43.541,0,48.427,0,53.333v9.792     C0,69.013,4.779,73.792,10.667,73.792z"></path>
+                                    <path d="M10.667,138.496c5.888,0,10.667-4.779,10.667-10.667v-21.568c0-5.888-4.779-10.667-10.667-10.667S0,100.373,0,106.261     v21.568C0,133.717,4.779,138.496,10.667,138.496z"></path>
+                                    <path d="M44.587,297.451c-5.163-1.472-9.941-4.267-13.781-8.085c-4.16-4.16-10.923-4.117-15.083,0.043     c-4.16,4.181-4.139,10.944,0.043,15.083c6.4,6.379,14.357,11.029,22.997,13.483c0.981,0.277,1.963,0.405,2.923,0.405     c4.629,0,8.917-3.051,10.24-7.744C53.547,304.96,50.261,299.051,44.587,297.451z"></path>
+                                    <path d="M307.605,51.968c0.981,0,1.984-0.128,2.987-0.448c5.653-1.664,8.917-7.573,7.253-13.227     c-2.517-8.619-7.253-16.533-13.675-22.891c-4.181-4.139-10.944-4.117-15.083,0.085c-4.139,4.181-4.096,10.944,0.085,15.083     c3.84,3.84,6.699,8.576,8.192,13.717C298.731,48.939,302.976,51.968,307.605,51.968z"></path>
+                                    <path d="M256.832,0h-21.568c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h21.568     c5.888,0,10.667-4.779,10.667-10.667S262.72,0,256.832,0z"></path>
+                                    <path d="M106.219,298.667H84.651c-5.888,0-10.667,4.779-10.667,10.667S78.763,320,84.651,320h21.568     c5.888,0,10.667-4.779,10.667-10.667S112.107,298.667,106.219,298.667z"></path>
+                                    <path d="M309.333,73.6c-5.888,0-10.667,4.779-10.667,10.667v21.568c0,5.888,4.779,10.667,10.667,10.667S320,111.723,320,105.835     V84.267C320,78.357,315.221,73.6,309.333,73.6z"></path>
+                                    <path d="M192.149,0h-21.568c-5.909,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h21.547     c5.909,0,10.688-4.779,10.688-10.667S198.037,0,192.149,0z"></path>
+                                    <path d="M127.445,0h-21.568c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h21.568     c5.888,0,10.667-4.779,10.667-10.667S133.333,0,127.445,0z"></path>
+                                        </g></g></g>
+                                    <g><g><path d="M309.333,138.667c-5.888,0-10.667,4.779-10.667,10.667V160c0,5.888,4.779,10.667,10.667,10.667S320,165.888,320,160    v-10.667C320,143.445,315.221,138.667,309.333,138.667z"></path></g></g>
+                                    <g><g><path d="M349.952,185.515l-33.067-33.067c-12.971-12.971-34.112-12.971-47.083,0c-3.883,3.883-6.613,8.512-8.171,13.419    c-11.627-4.053-25.536-1.045-34.496,7.915c-4.885,4.885-7.915,10.923-9.131,17.237c-10.176-1.429-20.8,2.027-28.203,9.429    c-7.083,7.083-10.304,16.576-9.664,25.856c-7.189,0.981-13.824,4.245-19.029,9.451c-6.293,6.293-9.749,14.656-9.749,23.552    s3.456,17.28,9.749,23.552l9.557,9.557v38.251C170.667,360.064,194.603,384,224,384h43.733C331.84,384,384,331.84,384,267.733    C384,236.693,371.904,207.488,349.952,185.515z M267.733,362.667H224c-17.643,0-32-14.357-32-32v-16.917l24.469,24.469    c4.16,4.16,10.923,4.16,15.083,0c2.069-2.091,3.115-4.821,3.115-7.552c0-2.731-1.045-5.461-3.115-7.552l-55.36-55.36    c-2.261-2.24-3.499-5.269-3.499-8.448c0-3.179,1.237-6.187,3.499-8.448c4.523-4.523,12.395-4.523,16.917,0l23.36,23.36    c4.16,4.16,10.923,4.16,15.083,0c2.069-2.091,3.115-4.821,3.115-7.552c0-2.731-1.045-5.461-3.115-7.531l-26.667-26.667    c-4.672-4.672-4.672-12.245,0-16.917c4.523-4.523,12.395-4.523,16.917,0l16,16c4.16,4.16,10.923,4.16,15.083,0    c2.069-2.091,3.115-4.821,3.115-7.552s-1.045-5.461-3.115-7.531l-10.667-10.667c-4.672-4.672-4.672-12.245,0-16.917    c4.523-4.523,12.395-4.523,16.917,0l10.667,10.667c4.16,4.16,10.923,4.16,15.083,0c2.069-2.091,3.115-4.821,3.115-7.552    s-1.045-5.461-3.136-7.552c-2.261-2.24-3.499-5.248-3.499-8.448s1.259-6.208,3.52-8.448c4.672-4.672,12.245-4.672,16.917,0    l33.067,33.067c17.92,17.92,27.797,41.771,27.797,67.115C362.667,320.085,320.085,362.667,267.733,362.667z"></path></g></g>
+                                    </svg>
+                                </div>
+                                <span class="feature-icon-label">Einfaches Ziehen und Ablegen</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-12">
+                                <div class="u-icon">
+                                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"><use xlink:href="#svg-b97a"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-b97a" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve" class="u-svg-content">
+                                    <g><g><g>
+                                    <path d="M106,121.083c-2.135-2.135-5.01-3.24-8.104-3.115c-3.021,0.167-5.823,1.594-7.729,3.948     c-30.635,37.844-47.5,85.458-47.5,134.083c0,117.635,95.698,213.333,213.333,213.333c48.625,0,96.24-16.865,134.083-47.5     c2.354-1.906,3.781-4.708,3.948-7.729c0.156-3.021-0.979-5.969-3.115-8.104L106,121.083z M256,448c-105.865,0-192-86.135-192-192     c0-40.406,12.25-78.604,35.542-111.198l267.656,267.656C334.604,435.75,296.406,448,256,448z"></path>
+                                    <path d="M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z M256,490.667     C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667     z"></path>
+                                    <path d="M256,42.667c-48.625,0-96.24,16.865-134.083,47.5c-2.354,1.906-3.781,4.708-3.948,7.729     c-0.156,3.021,0.979,5.969,3.115,8.104L406,390.917c2,2.01,4.719,3.125,7.542,3.125c0.188,0,0.375,0,0.563-0.01     c3.021-0.167,5.823-1.594,7.729-3.948c30.635-37.844,47.5-85.458,47.5-134.083C469.333,138.365,373.635,42.667,256,42.667z      M412.458,367.198L144.802,99.542C177.396,76.25,215.594,64,256,64c105.865,0,192,86.135,192,192     C448,296.406,435.75,334.604,412.458,367.198z"></path>
+                                        </g></g></g>
+                                    </svg>
+                                </div>
+                                <span class="feature-icon-label">Keine Codierung</span>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-sm-12">
+                                <div class="u-icon">
+                                    <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"><use xlink:href="#svg-1e24"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-1e24" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512;" xml:space="preserve" class="u-svg-content">
+                                    <g><g><path d="M485.547,251.733h-58.88v-153.6C426.638,74.581,407.552,55.495,384,55.467H128c-23.552,0.028-42.638,19.114-42.667,42.667    v51.2H38.519C17.255,149.357,0.023,166.589,0,187.853v230.161c0.023,21.264,17.255,38.496,38.519,38.519h136.294    c16.24-0.049,30.7-10.294,36.13-25.6H358.4c4.713,0,8.533-3.82,8.533-8.533v-17.067c0-14.138-11.462-25.6-25.6-25.6h-25.6V345.6    H384v84.48c0,14.61,11.844,26.453,26.453,26.453h75.093c14.61,0,26.453-11.844,26.453-26.453V278.187    C512,263.577,500.156,251.733,485.547,251.733z M196.267,418.014c-0.009,11.844-9.609,21.443-21.453,21.453H38.519    c-11.844-0.009-21.443-9.609-21.453-21.453v-4.147h179.2V418.014z M196.267,396.8h-179.2V209.067h179.2V396.8z M196.267,192    h-179.2v-4.147c0.009-11.844,9.609-21.443,21.453-21.453h136.294c11.844,0.009,21.443,9.609,21.453,21.453V192z M341.333,396.8    c4.713,0,8.533,3.821,8.533,8.533v8.533H213.333V396.8H341.333z M213.333,379.733V345.6h85.333v34.133H213.333z M384,328.533    h-76.8h-93.867v-25.6H384V328.533z M384,278.187v7.68H213.333v-98.014c-0.024-21.264-17.256-38.496-38.519-38.519H102.4v-51.2    c0-14.138,11.461-25.6,25.6-25.6h256c14.138,0,25.6,11.461,25.6,25.6v153.685C395.358,252.278,384.039,263.937,384,278.187z     M494.933,430.08c0,5.184-4.203,9.387-9.387,9.387h-75.093c-5.184,0-9.387-4.203-9.387-9.387v-7.68h93.867V430.08z     M494.933,405.333h-93.867v-102.4h93.867V405.333z M494.933,285.867h-93.867v-7.68c0-5.184,4.203-9.387,9.387-9.387h75.093    c5.184,0,9.387,4.203,9.387,9.387V285.867z"></path></g></g>
+                                    </svg>
+                                </div>
+                                <span class="feature-icon-label">Handyfreundlich</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-description-block">
+                        <h3>Schlüsselwörter</h3>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <script>
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        ProcessKeywords('#Keywords',
+                                            '#details-keywords',
+                                            '#add-keywords',
+                                            true,
+                                            false,
+                                            false,
+                                            {
+                                                'url': '/de/k/%7B0%7D-website-vorlagen', 
+                                                'noFollow': true
+                                            });
+                                    });
+                                </script>
+                                <input id="Keywords" name="Keywords" type="hidden" value="Familie;Kind;Liebe;Glück;Jungen;lächelnd;Kindheit;Zusammengehörigkeit;Spaß;heiter;Lebensstile;Männer;Frauen;Umarmen;süß;kaukasische ethnische Zugehörigkeit;Erwachsene;Männer;Nachwuchs;Verbindung;Sohn;Mutter;Baby;zärtlich;spielen;abstrakt;Kunst;dekorativ;Textur;Farbe;zeichnen;Design;Über;über mich" />
+                                <p class="details-keywords" id="details-keywords"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Mehr von Kunstdesign Website-Vorlagen</h3>
+                
+<script type="text/javascript">
+    var submitSearchTimer = false;
+    document.addEventListener("DOMContentLoaded", function() {
+        var thumbSlider = $('.thumbnail-slider');
+        thumbSlider.thumbnailSlider();
+    });
+</script>
+<div class="thumbnail-slider">
+    <div class="thumbnail-slider-viewport-wrapper">
+        <div class="thumbnail-slider-viewport">
+            <div class="thumbnail-slider-list">
+                    <a href="/de/st/72060/wichtige-details-der-schoenheit-website-vorlage" data-title="Wichtige Details der Sch&#246;nheit">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Wichtige Details der Sch&#246;nheit Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/72/06/de/website-vorlage-72060.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/529408/wir-bauen-laeden-website-vorlage" data-title="Wir bauen L&#228;den">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Wir bauen L&#228;den Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/52/94/de/website-vorlage-529408.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/2678091/mehrfarbige-vorlage-website-vorlage" data-title="Mehrfarbige Vorlage">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Mehrfarbige Vorlage Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/26/78/de/website-vorlage-2678091.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3444952/web-designer-business-card-website-vorlage" data-title="Web designer business card">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Web designer business card Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/34/44/de/website-vorlage-3444952.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/5479417/gutes-design-weckt-emotionen-und-soll-gefuehlt-werden-website-vorlage" data-title="Gutes Design weckt Emotionen und soll gef&#252;hlt werden">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Gutes Design weckt Emotionen und soll gef&#252;hlt werden Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/54/79/de/website-vorlage-5479417.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/5413529/kontakte-zu-designern-website-vorlage" data-title="Kontakte zu Designern">
+                        <span style="width: 200px; height: 260px;">
+                            <img alt="Kontakte zu Designern Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/54/13/de/website-vorlage-5413529.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/4365090/zufriedenheitsrate-website-vorlage" data-title="Zufriedenheitsrate">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Zufriedenheitsrate Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/43/65/de/website-vorlage-4365090.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3766171/wir-sind-strategische-kreative-denker-website-vorlage" data-title="Wir sind strategische kreative Denker">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Wir sind strategische kreative Denker Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/37/66/de/website-vorlage-3766171.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/494050/konzeptionelles-design-website-vorlage" data-title="Konzeptionelles Design">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Konzeptionelles Design Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/49/40/de/website-vorlage-494050.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3817113/seo-agentur-website-vorlage" data-title="SEO-Agentur">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="SEO-Agentur Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/38/17/de/website-vorlage-3817113.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/5203901/qualitaet-und-attraktive-designs-website-vorlage" data-title="Qualit&#228;t und attraktive Designs">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Qualit&#228;t und attraktive Designs Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/52/03/de/website-vorlage-5203901.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/2184402/unternehmen-fuer-webdesign-und-entwicklung-website-vorlage" data-title="Unternehmen f&#252;r Webdesign und -entwicklung">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Unternehmen f&#252;r Webdesign und -entwicklung Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/21/84/de/website-vorlage-2184402.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3064701/persoenliche-seite-von-celia-almeda-website-vorlage" data-title="Pers&#246;nliche Seite von Celia Almeda">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Pers&#246;nliche Seite von Celia Almeda Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/30/64/de/website-vorlage-3064701.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/2995982/visuelle-designer-website-vorlage" data-title="Visuelle Designer">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Visuelle Designer Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/29/95/de/website-vorlage-2995982.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3554542/persoenliche-seite-mit-portfolio-website-vorlage" data-title="Pers&#246;nliche Seite mit Portfolio">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Pers&#246;nliche Seite mit Portfolio Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/35/54/de/website-vorlage-3554542.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/554831/kuenstlerbiografie-website-vorlage" data-title="K&#252;nstlerbiografie">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="K&#252;nstlerbiografie Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/55/48/de/website-vorlage-554831.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/1716155/atelier-fuer-kunst-und-malerei-website-vorlage" data-title="Atelier f&#252;r Kunst und Malerei">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Atelier f&#252;r Kunst und Malerei Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/17/16/de/website-vorlage-1716155.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/4783640/erstellen-grossartiger-websites-fuer-branchenfuehrende-marken-website-vorlage" data-title="Erstellen gro&#223;artiger Websites f&#252;r branchenf&#252;hrende Marken">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Erstellen gro&#223;artiger Websites f&#252;r branchenf&#252;hrende Marken Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/47/83/de/website-vorlage-4783640.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/3208070/seo-und-webentwicklung-website-vorlage" data-title="SEO und Webentwicklung">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="SEO und Webentwicklung Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/32/08/de/website-vorlage-3208070.jpg" class="lazyload" />
+                        </span>
+                    </a>
+                    <a href="/de/st/82540/branding-fuer-unternehmen-website-vorlage" data-title="Branding f&#252;r Unternehmen">
+                        <span style="width: 200px; height: 275px;">
+                            <img alt="Branding f&#252;r Unternehmen Website-Vorlagen" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="https://images01.nicepagecdn.com/page/82/54/de/website-vorlage-82540.jpg" class="lazyload" />
+                        </span>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <a class="thumbnail-slider-control left off" href="#" rel="noopener" aria-label="thumbnail slider show more">
+        <span class="thumbnail-slider-control-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M9.53 11.71L5.99 8.18a.25.25 0 0 1 0-.36L9.53 4.3a.75.75 0 1 0-1.06-1.06L4.93 6.76c-.68.69-.68 1.8 0 2.48l3.54 3.53a.75.75 0 0 0 1.06-1.06z"></path>
+            </svg>
+        </span>
+    </a>
+    <a class="thumbnail-slider-control right" href="#" rel="noopener" aria-label="thumbnail slider show more">
+        <span class="thumbnail-slider-control-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path fill="currentColor" d="M6.47 4.29l3.54 3.53c.1.1.1.26 0 .36L6.47 11.7a.75.75 0 1 0 1.06 1.06l3.54-3.53c.68-.69.68-1.8 0-2.48L7.53 3.23a.75.75 0 0 0-1.06 1.06z"></path>
+            </svg>
+        </span>
+    </a>
+</div>
+            </div>
+        </div>
+        <br/><br />
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Mehr von Kunstdesign Bl&#246;cken</h3>
+            
+
+
+<ul class="thumbnails thumbnails-loading list-unstyled">
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 238px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3908416/irgendeine-verbindung-website-vorlage" style="width:260px; height: 188px;" title="Irgendeine Verbindung"><img alt="Irgendeine Verbindung" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/39/08/de/website-vorlage-3908416.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3908416/irgendeine-verbindung-website-vorlage" title="Irgendeine Verbindung">Irgendeine Verbindung</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 211px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2057711/wenden-sie-sich-an-unser-globales-team-von-branding-experten-website-vorlage" style="width:260px; height: 161px;" title="Wenden Sie Sich An Unser Globales Team Von Branding-Experten"><img alt="Wenden Sie Sich An Unser Globales Team Von Branding-Experten" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/20/57/de/website-vorlage-2057711.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2057711/wenden-sie-sich-an-unser-globales-team-von-branding-experten-website-vorlage" title="Wenden Sie Sich An Unser Globales Team Von Branding-Experten">Wenden Sie Sich An Unser Globales Team Von Branding-Experten</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 174px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4967975/eine-unabhaengige-designagentur-website-vorlage" style="width:260px; height: 124px;" title="Eine Unabhängige Designagentur"><img alt="Eine Unabhängige Designagentur" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/49/67/de/website-vorlage-4967975.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4967975/eine-unabhaengige-designagentur-website-vorlage" title="Eine Unabhängige Designagentur">Eine Unabhängige Designagentur</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 331px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/5368586/wir-ruhen-uns-nie-auf-den-erfolgen-der-vergangenheit-aus-website-vorlage" style="width:260px; height: 281px;" title="Wir Ruhen Uns Nie Auf Den Erfolgen Der Vergangenheit Aus"><img alt="Wir Ruhen Uns Nie Auf Den Erfolgen Der Vergangenheit Aus" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/53/68/de/website-vorlage-5368586.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/5368586/wir-ruhen-uns-nie-auf-den-erfolgen-der-vergangenheit-aus-website-vorlage" title="Wir Ruhen Uns Nie Auf Den Erfolgen Der Vergangenheit Aus">Wir Ruhen Uns Nie Auf Den Erfolgen Der Vergangenheit Aus</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 322px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/5553332/massgeschneiderte-loesungen-website-vorlage" style="width:260px; height: 272px;" title="Maßgeschneiderte Lösungen"><img alt="Maßgeschneiderte Lösungen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/55/53/de/website-vorlage-5553332.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/5553332/massgeschneiderte-loesungen-website-vorlage" title="Maßgeschneiderte Lösungen">Maßgeschneiderte Lösungen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 214px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4399274/engagiertes-teammitglied-website-vorlage" style="width:260px; height: 164px;" title="Engagiertes Teammitglied"><img alt="Engagiertes Teammitglied" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/43/99/de/website-vorlage-4399274.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4399274/engagiertes-teammitglied-website-vorlage" title="Engagiertes Teammitglied">Engagiertes Teammitglied</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 237px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2880966/ueber-digitalagentur-website-vorlage" style="width:260px; height: 187px;" title="Über Digitalagentur"><img alt="Über Digitalagentur" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/28/80/de/website-vorlage-2880966.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2880966/ueber-digitalagentur-website-vorlage" title="Über Digitalagentur">Über Digitalagentur</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 211px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1158257/wir-sind-spezialisiert-auf-webdesign-website-vorlage" style="width:260px; height: 161px;" title="Wir Sind Spezialisiert Auf Webdesign"><img alt="Wir Sind Spezialisiert Auf Webdesign" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/11/58/de/website-vorlage-1158257.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1158257/wir-sind-spezialisiert-auf-webdesign-website-vorlage" title="Wir Sind Spezialisiert Auf Webdesign">Wir Sind Spezialisiert Auf Webdesign</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 203px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4366433/unternehmen-vertrauen-uns-website-vorlage" style="width:260px; height: 153px;" title="Unternehmen Vertrauen Uns"><img alt="Unternehmen Vertrauen Uns" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/43/66/de/website-vorlage-4366433.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4366433/unternehmen-vertrauen-uns-website-vorlage" title="Unternehmen Vertrauen Uns">Unternehmen Vertrauen Uns</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 228px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3165352/danke-fuers-kommen-website-vorlage" style="width:260px; height: 178px;" title="Danke Fürs Kommen Website-Vorlage"><img alt="Danke Fürs Kommen Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/31/65/de/website-vorlage-3165352.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3165352/danke-fuers-kommen-website-vorlage" title="Danke Fürs Kommen Website-Vorlage">Danke Fürs Kommen Website-Vorlage</a>
+                            </div>
+        </li>
+            <li class="thumbnail-item" style="width: 260px; height: 460px;">
+                <div class="download-block " style="background-color: #363636; ">
+                        <img class="lazyload" data-src="//images01.nicepage.com/thumbs/a122014e1e8cdf24af08f98c/7eb1dacfadda5d798aa622f4/html-wordpress-small-animation-dark_150.gif" alt="Export nach HTML und WordPress" />
+                    <div style="color: #ffffff;" class="download-title">Export nach HTML und WordPress</div>
+                    <a class="btn btn-lg download-btn" href="/download" type="button" rel="nofollow" style="background-color: #cd30c0;">Herunterladen</a>
+                </div>
+            </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 210px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/5195486/wir-formen-emotionen-website-vorlage" style="width:260px; height: 160px;" title="Wir Formen Emotionen"><img alt="Wir Formen Emotionen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/51/95/de/website-vorlage-5195486.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/5195486/wir-formen-emotionen-website-vorlage" title="Wir Formen Emotionen">Wir Formen Emotionen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 190px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2731854/kreative-uebungen-website-vorlage" style="width:260px; height: 140px;" title="Kreative Übungen"><img alt="Kreative Übungen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/27/31/de/website-vorlage-2731854.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2731854/kreative-uebungen-website-vorlage" title="Kreative Übungen">Kreative Übungen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 203px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/459198/profil-des-grafikdesigners-website-vorlage" style="width:260px; height: 153px;" title="Profil Des Grafikdesigners"><img alt="Profil Des Grafikdesigners" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/45/91/de/website-vorlage-459198.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/459198/profil-des-grafikdesigners-website-vorlage" title="Profil Des Grafikdesigners">Profil Des Grafikdesigners</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 326px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/740062/sechs-arbeitsbereiche-website-vorlage" style="width:260px; height: 276px;" title="Sechs Arbeitsbereiche"><img alt="Sechs Arbeitsbereiche" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/74/00/de/website-vorlage-740062.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/740062/sechs-arbeitsbereiche-website-vorlage" title="Sechs Arbeitsbereiche">Sechs Arbeitsbereiche</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 215px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/111972/bereich-grafikdesign-website-vorlage" style="width:260px; height: 165px;" title="Bereich Grafikdesign"><img alt="Bereich Grafikdesign" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/11/19/de/website-vorlage-111972.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/111972/bereich-grafikdesign-website-vorlage" title="Bereich Grafikdesign">Bereich Grafikdesign</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 178px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1756176/wir-erstellen-creatives-von-grund-auf-neu-website-vorlage" style="width:260px; height: 128px;" title="Wir Erstellen Creatives Von Grund Auf Neu"><img alt="Wir Erstellen Creatives Von Grund Auf Neu" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/17/56/de/website-vorlage-1756176.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1756176/wir-erstellen-creatives-von-grund-auf-neu-website-vorlage" title="Wir Erstellen Creatives Von Grund Auf Neu">Wir Erstellen Creatives Von Grund Auf Neu</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 204px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3942942/setzen-sie-sich-realistische-ziele-website-vorlage" style="width:260px; height: 154px;" title="Setzen Sie Sich Realistische Ziele"><img alt="Setzen Sie Sich Realistische Ziele" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/39/42/de/website-vorlage-3942942.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3942942/setzen-sie-sich-realistische-ziele-website-vorlage" title="Setzen Sie Sich Realistische Ziele">Setzen Sie Sich Realistische Ziele</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 295px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3064700/mein-profil-website-vorlage" style="width:260px; height: 245px;" title="Mein Profil"><img alt="Mein Profil" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/30/64/de/website-vorlage-3064700.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3064700/mein-profil-website-vorlage" title="Mein Profil">Mein Profil</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 192px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2991154/visuelles-design-und-art-director-website-vorlage" style="width:260px; height: 142px;" title="Visuelles Design Und Art Director"><img alt="Visuelles Design Und Art Director" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/29/91/de/website-vorlage-2991154.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2991154/visuelles-design-und-art-director-website-vorlage" title="Visuelles Design Und Art Director">Visuelles Design Und Art Director</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 164px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4784533/wir-gestalten-digitale-plattformen-website-vorlage" style="width:260px; height: 114px;" title="Wir Gestalten Digitale Plattformen Website-Vorlage"><img alt="Wir Gestalten Digitale Plattformen Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/47/84/de/website-vorlage-4784533.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4784533/wir-gestalten-digitale-plattformen-website-vorlage" title="Wir Gestalten Digitale Plattformen Website-Vorlage">Wir Gestalten Digitale Plattformen Website-Vorlage</a>
+                            </div>
+        </li>
+</ul>
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Mehr von &#220;ber uns Bl&#246;cken</h3>
+            
+
+
+<ul class="thumbnails thumbnails-loading list-unstyled">
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 188px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1762667/projekt-von-grund-auf-neu-website-vorlage" style="width:260px; height: 138px;" title="Projekt Von Grund Auf Neu"><img alt="Projekt Von Grund Auf Neu" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/17/62/de/website-vorlage-1762667.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1762667/projekt-von-grund-auf-neu-website-vorlage" title="Projekt Von Grund Auf Neu">Projekt Von Grund Auf Neu</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 229px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2415460/ganz-klar-ueber-uns-website-vorlage" style="width:260px; height: 179px;" title="Ganz Klar Über Uns"><img alt="Ganz Klar Über Uns" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/24/15/de/website-vorlage-2415460.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2415460/ganz-klar-ueber-uns-website-vorlage" title="Ganz Klar Über Uns">Ganz Klar Über Uns</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 278px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3554665/unsere-geschichte-website-vorlage" style="width:260px; height: 228px;" title="Unsere Geschichte"><img alt="Unsere Geschichte" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/35/54/de/website-vorlage-3554665.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3554665/unsere-geschichte-website-vorlage" title="Unsere Geschichte">Unsere Geschichte</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 225px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/425284/informationen-ueber-mich-website-vorlage" style="width:260px; height: 175px;" title="Informationen Über Mich"><img alt="Informationen Über Mich" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/42/52/de/website-vorlage-425284.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/425284/informationen-ueber-mich-website-vorlage" title="Informationen Über Mich">Informationen Über Mich</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 170px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3435006/laufbahnentwicklung-website-vorlage" style="width:260px; height: 120px;" title="Laufbahnentwicklung"><img alt="Laufbahnentwicklung" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/34/35/de/website-vorlage-3435006.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3435006/laufbahnentwicklung-website-vorlage" title="Laufbahnentwicklung">Laufbahnentwicklung</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 203px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1028505/wir-schaffen-unvergessliche-marken-website-vorlage" style="width:260px; height: 153px;" title="Wir Schaffen Unvergessliche Marken"><img alt="Wir Schaffen Unvergessliche Marken" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/10/28/de/website-vorlage-1028505.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1028505/wir-schaffen-unvergessliche-marken-website-vorlage" title="Wir Schaffen Unvergessliche Marken">Wir Schaffen Unvergessliche Marken</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 189px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/154534/es-ist-mein-lebenslauf-website-vorlage" style="width:260px; height: 139px;" title="Es Ist Mein Lebenslauf"><img alt="Es Ist Mein Lebenslauf" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/15/45/de/website-vorlage-154534.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/154534/es-ist-mein-lebenslauf-website-vorlage" title="Es Ist Mein Lebenslauf">Es Ist Mein Lebenslauf</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 349px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/754564/wir-gestalten-bueros-website-vorlage" style="width:260px; height: 299px;" title="Wir Gestalten Büros"><img alt="Wir Gestalten Büros" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/75/45/de/website-vorlage-754564.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/754564/wir-gestalten-bueros-website-vorlage" title="Wir Gestalten Büros">Wir Gestalten Büros</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 200px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/431666/make-up-stylistin-website-vorlage" style="width:260px; height: 150px;" title="Make-Up-Stylistin"><img alt="Make-Up-Stylistin" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/43/16/de/website-vorlage-431666.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/431666/make-up-stylistin-website-vorlage" title="Make-Up-Stylistin">Make-Up-Stylistin</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 186px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/91051/zaehler-unserer-erfolge-website-vorlage" style="width:260px; height: 136px;" title="Zähler Unserer Erfolge Website-Vorlage"><img alt="Zähler Unserer Erfolge Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/91/05/de/website-vorlage-91051.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/91051/zaehler-unserer-erfolge-website-vorlage" title="Zähler Unserer Erfolge Website-Vorlage">Zähler Unserer Erfolge Website-Vorlage</a>
+                            </div>
+        </li>
+            <li class="thumbnail-item" style="width: 260px; height: 460px;">
+                <div class="download-block " style="background-color: #363636; ">
+                        <img class="lazyload" data-src="//images01.nicepage.com/thumbs/a122014e1e8cdf24af08f98c/7eb1dacfadda5d798aa622f4/html-wordpress-small-animation-dark_150.gif" alt="Export nach HTML und WordPress" />
+                    <div style="color: #ffffff;" class="download-title">Export nach HTML und WordPress</div>
+                    <a class="btn btn-lg download-btn" href="/download" type="button" rel="nofollow" style="background-color: #cd30c0;">Herunterladen</a>
+                </div>
+            </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 196px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1832667/erfolgreicher-geschaeftsstart-website-vorlage" style="width:260px; height: 146px;" title="Erfolgreicher Geschäftsstart"><img alt="Erfolgreicher Geschäftsstart" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/18/32/de/website-vorlage-1832667.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1832667/erfolgreicher-geschaeftsstart-website-vorlage" title="Erfolgreicher Geschäftsstart">Erfolgreicher Geschäftsstart</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 201px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/874931/ich-designe-webseiten-website-vorlage" style="width:260px; height: 151px;" title="Ich Designe Webseiten"><img alt="Ich Designe Webseiten" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/87/49/de/website-vorlage-874931.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/874931/ich-designe-webseiten-website-vorlage" title="Ich Designe Webseiten">Ich Designe Webseiten</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 178px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3911068/profil-art-director-website-vorlage" style="width:260px; height: 128px;" title="Profil Art Director"><img alt="Profil Art Director" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/39/11/de/website-vorlage-3911068.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3911068/profil-art-director-website-vorlage" title="Profil Art Director">Profil Art Director</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 184px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/5502094/designer-ingenieure-innovatoren-website-vorlage" style="width:260px; height: 134px;" title="Designer, Ingenieure, Innovatoren"><img alt="Designer, Ingenieure, Innovatoren" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/55/02/de/website-vorlage-5502094.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/5502094/designer-ingenieure-innovatoren-website-vorlage" title="Designer, Ingenieure, Innovatoren">Designer, Ingenieure, Innovatoren</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 167px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4074172/ueber-uns-informationen-website-vorlage" style="width:260px; height: 117px;" title="Über Uns Informationen"><img alt="Über Uns Informationen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/40/74/de/website-vorlage-4074172.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4074172/ueber-uns-informationen-website-vorlage" title="Über Uns Informationen">Über Uns Informationen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 197px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/42266/wir-bauen-digitale-produkte-website-vorlage" style="width:260px; height: 147px;" title="Wir Bauen Digitale Produkte"><img alt="Wir Bauen Digitale Produkte" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/42/26/de/website-vorlage-42266.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/42266/wir-bauen-digitale-produkte-website-vorlage" title="Wir Bauen Digitale Produkte">Wir Bauen Digitale Produkte</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 187px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/358081/treffen-sie-sich-und-legen-sie-los-website-vorlage" style="width:260px; height: 137px;" title="Treffen Sie Sich Und Legen Sie Los"><img alt="Treffen Sie Sich Und Legen Sie Los" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/35/80/de/website-vorlage-358081.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/358081/treffen-sie-sich-und-legen-sie-los-website-vorlage" title="Treffen Sie Sich Und Legen Sie Los">Treffen Sie Sich Und Legen Sie Los</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 177px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/105166/ich-bin-freiberuflicher-grafikdesigner-website-vorlage" style="width:260px; height: 127px;" title="Ich Bin Freiberuflicher Grafikdesigner"><img alt="Ich Bin Freiberuflicher Grafikdesigner" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/10/51/de/website-vorlage-105166.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/105166/ich-bin-freiberuflicher-grafikdesigner-website-vorlage" title="Ich Bin Freiberuflicher Grafikdesigner">Ich Bin Freiberuflicher Grafikdesigner</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 212px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/255835/digitales-portfolio-website-vorlage" style="width:260px; height: 162px;" title="Digitales Portfolio"><img alt="Digitales Portfolio" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/25/58/de/website-vorlage-255835.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/255835/digitales-portfolio-website-vorlage" title="Digitales Portfolio">Digitales Portfolio</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 295px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3064700/mein-profil-website-vorlage" style="width:260px; height: 245px;" title="Mein Profil Website-Vorlage"><img alt="Mein Profil Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/30/64/de/website-vorlage-3064700.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3064700/mein-profil-website-vorlage" title="Mein Profil Website-Vorlage">Mein Profil Website-Vorlage</a>
+                            </div>
+        </li>
+            <li class="thumbnail-item" style="width: 260px; height: 320px;">
+                <div class="download-block white-block" style="background-color: #ffffff; ">
+                    <div style="color: #3c3c3c;" class="download-title">Kostenlose Website Builder Software</div>
+                    <a class="btn btn-lg download-btn" href="/download" type="button" rel="nofollow" style="background-color: #ec311e;">Herunterladen</a>
+                </div>
+            </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 231px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/948549/ueber-den-autor-website-vorlage" style="width:260px; height: 181px;" title="Über Den Autor"><img alt="Über Den Autor" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/94/85/de/website-vorlage-948549.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/948549/ueber-den-autor-website-vorlage" title="Über Den Autor">Über Den Autor</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 201px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1715707/ueber-unseren-assistenten-website-vorlage" style="width:260px; height: 151px;" title="Über Unseren Assistenten"><img alt="Über Unseren Assistenten" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/17/15/de/website-vorlage-1715707.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1715707/ueber-unseren-assistenten-website-vorlage" title="Über Unseren Assistenten">Über Unseren Assistenten</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 165px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/230837/text-ueber-unternehmen-website-vorlage" style="width:260px; height: 115px;" title="Text Über Unternehmen"><img alt="Text Über Unternehmen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/23/08/de/website-vorlage-230837.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/230837/text-ueber-unternehmen-website-vorlage" title="Text Über Unternehmen">Text Über Unternehmen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 205px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/874905/ich-kreiere-kleidung-website-vorlage" style="width:260px; height: 155px;" title="Ich Kreiere Kleidung"><img alt="Ich Kreiere Kleidung" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/87/49/de/website-vorlage-874905.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/874905/ich-kreiere-kleidung-website-vorlage" title="Ich Kreiere Kleidung">Ich Kreiere Kleidung</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 238px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/781427/ueber-unser-geschaeftsprinzip-website-vorlage" style="width:260px; height: 188px;" title="Über Unser Geschäftsprinzip"><img alt="Über Unser Geschäftsprinzip" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/78/14/de/website-vorlage-781427.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/781427/ueber-unser-geschaeftsprinzip-website-vorlage" title="Über Unser Geschäftsprinzip">Über Unser Geschäftsprinzip</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 274px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2575078/ueber-branding-studio-website-vorlage" style="width:260px; height: 224px;" title="Über Branding-Studio"><img alt="Über Branding-Studio" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/25/75/de/website-vorlage-2575078.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2575078/ueber-branding-studio-website-vorlage" title="Über Branding-Studio">Über Branding-Studio</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 232px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4258845/wir-sind-designer-und-strategen-website-vorlage" style="width:260px; height: 182px;" title="Wir Sind Designer Und Strategen"><img alt="Wir Sind Designer Und Strategen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/42/58/de/website-vorlage-4258845.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4258845/wir-sind-designer-und-strategen-website-vorlage" title="Wir Sind Designer Und Strategen">Wir Sind Designer Und Strategen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 207px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/611780/ueber-journalist-website-vorlage" style="width:260px; height: 157px;" title="Über Journalist"><img alt="Über Journalist" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/61/17/de/website-vorlage-611780.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/611780/ueber-journalist-website-vorlage" title="Über Journalist">Über Journalist</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 297px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2147620/profis-fuer-sie-website-vorlage" style="width:260px; height: 247px;" title="Profis Für Sie"><img alt="Profis Für Sie" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/21/47/de/website-vorlage-2147620.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2147620/profis-fuer-sie-website-vorlage" title="Profis Für Sie">Profis Für Sie</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 229px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/220636/kreatives-designer-portfolio-website-vorlage" style="width:260px; height: 179px;" title="Kreatives Designer-Portfolio Website-Vorlage"><img alt="Kreatives Designer-Portfolio Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/22/06/de/website-vorlage-220636.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/220636/kreatives-designer-portfolio-website-vorlage" title="Kreatives Designer-Portfolio Website-Vorlage">Kreatives Designer-Portfolio Website-Vorlage</a>
+                            </div>
+        </li>
+            <li class="thumbnail-item" style="width: 260px; height: 320px;">
+                <div class="download-block " style="background-color: #363636; ">
+                    <div style="color: #ffffff;" class="download-title">Erstellen Sie eine Website ohne Codierung</div>
+                    <a class="btn btn-lg download-btn" href="/download" type="button" rel="nofollow" style="background-color: #cd30c0;">Herunterladen</a>
+                </div>
+            </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 198px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2990761/php-entwicklerprofil-website-vorlage" style="width:260px; height: 148px;" title="PHP-Entwicklerprofil"><img alt="PHP-Entwicklerprofil" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/29/90/de/website-vorlage-2990761.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2990761/php-entwicklerprofil-website-vorlage" title="PHP-Entwicklerprofil">PHP-Entwicklerprofil</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 156px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/63903/geschaeftstext-auf-dunklem-hintergrund-website-vorlage" style="width:260px; height: 106px;" title="Geschäftstext Auf Dunklem Hintergrund"><img alt="Geschäftstext Auf Dunklem Hintergrund" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/63/90/de/website-vorlage-63903.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/63903/geschaeftstext-auf-dunklem-hintergrund-website-vorlage" title="Geschäftstext Auf Dunklem Hintergrund">Geschäftstext Auf Dunklem Hintergrund</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 222px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/261771/bekleidungsmodell-portfolio-website-vorlage" style="width:260px; height: 172px;" title="Bekleidungsmodell Portfolio"><img alt="Bekleidungsmodell Portfolio" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/26/17/de/website-vorlage-261771.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/261771/bekleidungsmodell-portfolio-website-vorlage" title="Bekleidungsmodell Portfolio">Bekleidungsmodell Portfolio</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 216px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/379248/einzigartige-fotografie-website-vorlage" style="width:260px; height: 166px;" title="Einzigartige Fotografie"><img alt="Einzigartige Fotografie" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/37/92/de/website-vorlage-379248.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/379248/einzigartige-fotografie-website-vorlage" title="Einzigartige Fotografie">Einzigartige Fotografie</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 185px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4974204/zusammenhalt-der-menschen-website-vorlage" style="width:260px; height: 135px;" title="Zusammenhalt Der Menschen"><img alt="Zusammenhalt Der Menschen" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/49/74/de/website-vorlage-4974204.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4974204/zusammenhalt-der-menschen-website-vorlage" title="Zusammenhalt Der Menschen">Zusammenhalt Der Menschen</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 222px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1253934/was-wir-tun-blockiert-website-vorlage" style="width:260px; height: 172px;" title="Was Wir Tun, Blockiert"><img alt="Was Wir Tun, Blockiert" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/12/53/de/website-vorlage-1253934.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1253934/was-wir-tun-blockiert-website-vorlage" title="Was Wir Tun, Blockiert">Was Wir Tun, Blockiert</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 223px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/566880/meilensteine-des-unternehmens-website-vorlage" style="width:260px; height: 173px;" title="Meilensteine Des Unternehmens"><img alt="Meilensteine Des Unternehmens" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/56/68/de/website-vorlage-566880.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/566880/meilensteine-des-unternehmens-website-vorlage" title="Meilensteine Des Unternehmens">Meilensteine Des Unternehmens</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 320px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/5512741/ueber-ausbildungsbetrieb-website-vorlage" style="width:260px; height: 270px;" title="Über Ausbildungsbetrieb"><img alt="Über Ausbildungsbetrieb" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/55/12/de/website-vorlage-5512741.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/5512741/ueber-ausbildungsbetrieb-website-vorlage" title="Über Ausbildungsbetrieb">Über Ausbildungsbetrieb</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 215px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1323485/ueber-mich-mit-kreisbild-website-vorlage" style="width:260px; height: 165px;" title="Über Mich Mit Kreisbild"><img alt="Über Mich Mit Kreisbild" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/13/23/de/website-vorlage-1323485.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1323485/ueber-mich-mit-kreisbild-website-vorlage" title="Über Mich Mit Kreisbild">Über Mich Mit Kreisbild</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 270px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/639436/ueber-meine-arbeit-und-meinen-erfolg-website-vorlage" style="width:260px; height: 220px;" title="Über Meine Arbeit Und Meinen Erfolg Website-Vorlage"><img alt="Über Meine Arbeit Und Meinen Erfolg Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/63/94/de/website-vorlage-639436.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/639436/ueber-meine-arbeit-und-meinen-erfolg-website-vorlage" title="Über Meine Arbeit Und Meinen Erfolg Website-Vorlage">Über Meine Arbeit Und Meinen Erfolg Website-Vorlage</a>
+                            </div>
+        </li>
+            <li class="thumbnail-item" style="width: 260px; height: 320px;">
+                <div class="download-block white-block" style="background-color: #ffffff; ">
+                    <div style="color: #3c3c3c;" class="download-title">Passen Sie eine beliebige Vorlage an</div>
+                    <a class="btn btn-lg download-btn" href="/download" type="button" rel="nofollow" style="background-color: #ec311e;">Herunterladen</a>
+                </div>
+            </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 199px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4084376/management-und-strategieberatung-website-vorlage" style="width:260px; height: 149px;" title="Management- Und Strategieberatung"><img alt="Management- Und Strategieberatung" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/40/84/de/website-vorlage-4084376.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4084376/management-und-strategieberatung-website-vorlage" title="Management- Und Strategieberatung">Management- Und Strategieberatung</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 152px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/63901/text-ueber-das-geschaeft-website-vorlage" style="width:260px; height: 102px;" title="Text Über Das Geschäft"><img alt="Text Über Das Geschäft" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/63/90/de/website-vorlage-63901.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/63901/text-ueber-das-geschaeft-website-vorlage" title="Text Über Das Geschäft">Text Über Das Geschäft</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 293px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2626223/ueber-kreatives-designstudio-website-vorlage" style="width:260px; height: 243px;" title="Über Kreatives Designstudio"><img alt="Über Kreatives Designstudio" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/26/26/de/website-vorlage-2626223.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2626223/ueber-kreatives-designstudio-website-vorlage" title="Über Kreatives Designstudio">Über Kreatives Designstudio</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 291px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/4234395/design-und-technologie-website-vorlage" style="width:260px; height: 241px;" title="Design Und Technologie"><img alt="Design Und Technologie" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/42/34/de/website-vorlage-4234395.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/4234395/design-und-technologie-website-vorlage" title="Design Und Technologie">Design Und Technologie</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 298px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3628384/unternehmensberatungsteam-website-vorlage" style="width:260px; height: 248px;" title="Unternehmensberatungsteam"><img alt="Unternehmensberatungsteam" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/36/28/de/website-vorlage-3628384.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3628384/unternehmensberatungsteam-website-vorlage" title="Unternehmensberatungsteam">Unternehmensberatungsteam</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 222px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2626357/sperren-sie-mit-zwei-tasten-website-vorlage" style="width:260px; height: 172px;" title="Sperren Sie Mit Zwei Tasten"><img alt="Sperren Sie Mit Zwei Tasten" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/26/26/de/website-vorlage-2626357.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2626357/sperren-sie-mit-zwei-tasten-website-vorlage" title="Sperren Sie Mit Zwei Tasten">Sperren Sie Mit Zwei Tasten</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 218px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/1505179/rufen-sie-an-oder-informieren-sie-sich-ueber-uns-website-vorlage" style="width:260px; height: 168px;" title="Rufen Sie An Oder Informieren Sie Sich Über Uns"><img alt="Rufen Sie An Oder Informieren Sie Sich Über Uns" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/15/05/de/website-vorlage-1505179.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/1505179/rufen-sie-an-oder-informieren-sie-sich-ueber-uns-website-vorlage" title="Rufen Sie An Oder Informieren Sie Sich Über Uns">Rufen Sie An Oder Informieren Sie Sich Über Uns</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 258px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/458258/ich-bin-freiberuflicher-webentwickler-website-vorlage" style="width:260px; height: 208px;" title="Ich Bin Freiberuflicher Webentwickler"><img alt="Ich Bin Freiberuflicher Webentwickler" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/45/82/de/website-vorlage-458258.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/458258/ich-bin-freiberuflicher-webentwickler-website-vorlage" title="Ich Bin Freiberuflicher Webentwickler">Ich Bin Freiberuflicher Webentwickler</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 326px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/2416427/erfolgreiche-beratung-website-vorlage" style="width:260px; height: 276px;" title="Erfolgreiche Beratung"><img alt="Erfolgreiche Beratung" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/24/16/de/website-vorlage-2416427.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/2416427/erfolgreiche-beratung-website-vorlage" title="Erfolgreiche Beratung">Erfolgreiche Beratung</a>
+                            </div>
+        </li>
+        <li class="thumbnail-item title-one-row" data-height="0" style="width: 260px; height: 250px;" 
+             >
+            <div class="page-image">
+                <a class="thumbnail" href="/de/st/3050169/ueber-uns-block-mit-grid-repeater-website-vorlage" style="width:260px; height: 200px;" title="Über Uns Block Mit Grid Repeater Website-Vorlage"><img alt="Über Uns Block Mit Grid Repeater Website-Vorlage" class="media-image lazyload noversion" data-src="https://images01.nicepagecdn.com/page/30/50/de/website-vorlage-3050169.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" style="max-width:100%;" /></a>
+            </div>
+            <div class="page-title one-row ">
+                <a href="/de/st/3050169/ueber-uns-block-mit-grid-repeater-website-vorlage" title="Über Uns Block Mit Grid Repeater Website-Vorlage">Über Uns Block Mit Grid Repeater Website-Vorlage</a>
+                            </div>
+        </li>
+</ul>
+
+
+        </div>
+    </div>
+    <br />
+
+<section id="sec-win-download" style="display: none;">
+    <div class="container-layout">
+        <img alt="" data-image-width="800" data-image-height="400" data-src="//csite.nicepage.com/Images/Site/downloadwinchrome.jpg">
+        <p class="u-text">
+            You are downloading Nicepage. Problems?&nbsp;<a href="/get/windows/">Click Here</a>
+        </p>
+        <p class="u-text">Run Nicepage.exe from the Download Panel</p>
+    </div>
+</section>
+
+<section id="sec-mac-download" style="display: none;">
+    <div class="container-layout">
+        <img alt="" data-src="//csite.nicepage.com/Images/Site/downloadmacsafari.jpg" >
+        <p class="u-text">
+            You are downloading Nicepage. Problems?&nbsp;<a href="/get/mac/">Click Here</a>
+        </p>
+        <p class="u-text">Run Nicepage.dmg from the Download Panel</p>
+    </div>
+</section>
+
+
+
+            </section>
+            <div id="push"></div>
+        </div>
+
+        <div class="footer">
+
+<div class="footer-top">
+    <div class="container">
+        <style>
+.footer-top a {
+    color: #ddd !important;
+    font-size: 16px;
+}
+</style>
+
+<div class="row">
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>Company</h6>
+                <ul>
+                    <li><a href="/doc/frequently-asked-questions-16656">FAQ</a></li>
+                    <li><a href="/Terms">Terms of Use</a></li>
+                    <li><a href="/Privacy">Privacy Policy</a></li>
+                    <li><a href="/Agreement">License Agreement</a></li>
+                    <li><a href="/About">About Us</a></li>
+                    <li><a href="/partners">Partners</a></li>
+                    <li><a href="/Abuse">Abuse</a></li>
+                    <li><a href="/Forum/Topic/Create">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>Product</h6>
+                <ul>
+                    <li><a href="/download">Download</a></li>
+                    <li><a href="/features">400+ Features</a></li>
+                    <li><a href="/nicepage-review">Review</a></li>
+                    <li><a href="/affiliates">Affiliates</a></li>
+                    <li><a href="/doc">Documentation</a></li>
+                    <li><a href="/forum">Forum</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <h6>Themes & Templates</h6>
+                <ul>
+                    <li><a href="/website-templates">Website Templates</a></li>
+                    <li><a href="/wordpress-themes">WordPress Themes</a></li>
+                    <li><a href="/html-templates">HTML Templates</a></li>
+                    <li><a href="/css-templates">CSS Templates</a></li>
+                    <li><a href="/joomla-templates">Joomla Templates</a></li>
+                    <li><a href="/woocommerce-theme">WooCommerce Themes</a></li>
+                    <li><a href="/html5-template">HTML5 Templates</a></li>
+                    <li><a href="/one-page-template">One Page Templates</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <h6>Nicepage</h6>
+                <ul>
+                    <li><a href="/website-builder">Website Builder</a></li>
+                    <li><a href="/html">HTML Website Builder</a></li>
+                    <li><a href="/wordpress">WordPress Website Builder</a></li>
+                    <li><a href="/joomla">Joomla Page Builder</a></li>
+                    <li><a href="/wysiwyg-html-editor">WYSIWYG HTML Editor</a></li>
+                    <li><a href="/static-site-generator">Static Site Generator</a></li>
+                    <li><a href="/html-code">HTML Code Generator</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <h6>Web Design</h6>
+                <ul>
+                    <li><a href="/website-design">Website Designs</a></li>
+                    <li><a href="/web-page-design">Web Page Designs</a></li>
+                    <li><a href="/web-design">Web Design</a></li>
+                    <li><a href="/web-page-designer">Web Page Designer</a></li>
+                    <li><a href="/landing-page">Landing Pages</a></li>
+                    <li><a href="/homepage-design">Homepage Designs</a></li>
+                    <li><a href="/website-mockup">Website  Mockup</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div id="footer-links" class="footer-inline col-sm-12 pull-right">
+                <div style="white-space: nowrap; float: left; text-align: left;">
+    <div class="row">
+        <div class="col-sm-3">
+        	<a href="https://facebook.com/nicepageapp" rel="noreferrer" target="_blank" style="margin-right: 10px;">
+        	<svg x="0px" y="0px" viewBox="0 0 112.2 112.2" style="width: 24px;">
+        	<circle fill="#3B5998" cx="56.1" cy="56.1" r="55"></circle>
+        	<path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+        	c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+        	</svg><span style="position: relative;top: -7px;margin-left: 5px;">Facebook</span></a>
+        </div>
+        <div class="col-sm-3">
+			<a href="https://twitter.com/NicepageApp" rel="noreferrer" target="_blank" style="margin-right: 10px;">
+			<svg x="0px" y="0px" viewBox="0 0 112.2 112.2" style="width: 24px;">
+			<circle fill="#55ACEE" class="st0" cx="56.1" cy="56.1" r="55"/>
+			<path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+				c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+				c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+				c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+				c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"/>
+        	</svg><span style="position: relative;top: -7px;margin-left: 5px;">Twitter</span></a>
+        </div>
+        <div class="col-sm-3">
+        	<a href="https://youtube.com/nicepage?sub_confirmation=1" rel="noreferrer" target="_blank" style="margin-right: 10px;">
+        	<svg x="0px" y="0px" viewBox="0 0 112.2 112.2" style="width: 24px;">
+        	<circle fill="#D22215" cx="56.1" cy="56.1" r="55"></circle>
+        	<path fill="#FFFFFF" d="M74.9,33.3H37.3c-7.4,0-13.4,6-13.4,13.4v18.8c0,7.4,6,13.4,13.4,13.4h37.6c7.4,0,13.4-6,13.4-13.4V46.7
+        	C88.3,39.3,82.3,33.3,74.9,33.3L74.9,33.3z M65.9,57l-17.6,8.4c-0.5,0.2-1-0.1-1-0.6V47.5c0-0.5,0.6-0.9,1-0.6l17.6,8.9
+        	C66.4,56,66.4,56.8,65.9,57L65.9,57z"></path>
+        	</svg><span style="position: relative;top: -7px;margin-left: 5px;">YouTube</span></a>
+        </div>
+        <div class="col-sm-3">
+        	<a href="https://www.pinterest.com/nicepagecom/pins" rel="noreferrer" target="_blank" style="margin-right: 10px;">
+        	<svg x="0px" y="0px" viewBox="0 0 112.2 112.2" style="width: 24px;">
+        	<circle fill="#CB2027" cx="56.1" cy="56.1" r="55"></circle>
+        	<path fill="#FFFFFF" d="M61.1,76.9c-4.7-0.3-6.7-2.7-10.3-5c-2,10.7-4.6,20.9-11.9,26.2c-2.2-16.1,3.3-28.2,5.9-41
+        	c-4.4-7.5,0.6-22.5,9.9-18.8c11.6,4.6-10,27.8,4.4,30.7C74.2,72,80.3,42.8,71,33.4C57.5,19.6,31.7,33,34.9,52.6
+        	c0.8,4.8,5.8,6.2,2,12.9c-8.7-1.9-11.2-8.8-10.9-17.8C26.5,32.8,39.3,22.5,52.2,21c16.3-1.9,31.6,5.9,33.7,21.2
+        	C88.2,59.5,78.6,78.2,61.1,76.9z"></path>
+        	</svg><span style="position: relative;top: -7px;margin-left: 5px;">Pinterest</span></a>
+    	</div>
+    </div>
+</div>
+<!--    
+<ul class="u-unstyled">
+	<li><a href="/pricing">Premium</a></li>
+	<li>|</li>
+	<li><a href="/affiliates">Affiliates</a></li>
+	<li>|</li>
+	<li><a href="/Forum/Topic/Create?private=1">Contact Support</a></li>
+	<li>|</li>
+	<li><a href="/About">About</a></li>
+	<li>|</li>
+	<li><a href="/Terms">Terms</a></li>
+	<li>|</li>
+	<li><a href="/Privacy">Privacy</a></li>
+	<li>|</li>
+	<li><a href="/Agreement">License</a></li>
+</ul>
+-->
+                <div class="copy">&copy; 2023 Nicepage Free Website Builder Software - Alle Rechte vorbehalten</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </body>
+</html>
+
+

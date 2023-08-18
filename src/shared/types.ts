@@ -1,18 +1,27 @@
 export enum Severity {
-  error = "error",
-  info = "info",
-  success = "success",
-  warning = "warning"
+  error = 'error',
+  info = 'info',
+  success = 'success',
+  warning = 'warning'
 }
+
 export type Message = {
-  severity: Severity;
-  message: string;
-  eventType?: EventType;
+  severity: Severity
+  message: string
+  eventType?: EventType
 };
+
 export enum EventType {
-  delete = "delete",
-  create = "create",
-  update = "update",
-  upload = "upload",
-  load = "load"
+  delete = 'delete',
+  create = 'create',
+  update = 'update',
+  upload = 'upload',
+  load = 'load'
+}
+
+export interface Member {
+  id: string
+  firstname: string
+  lastname: string
+  active: boolean
 }

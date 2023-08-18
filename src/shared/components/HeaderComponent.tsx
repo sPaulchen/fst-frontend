@@ -1,34 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { makeStyles } from '@mui/styles'
-import { Theme, Typography } from '@mui/material'
-import { AppSetting } from '~screens/App/App'
-import { useHistory } from 'react-router'
+import { AppSetting, MenuItem } from '~screens/App/App'
 import SearchComponent from '~shared/components/SearchComponent'
+import Navbar from './Navbar'
+import { useHistory } from 'react-router-dom'
 
 interface Props {
   items: AppSetting[]
   user?: any
   changeSearch?: (value?: string) => void
 }
+
 const HeaderComponent: React.FC<Props> = (props) => {
   const history = useHistory()
 
-  const changeTab = (value: string) => {
-    history.replace(value)
+  const [tab, setTab] = useState<AppSetting>(props.items[0])
+
+  const changeTab = (value: MenuItem) => {
+    const newTab = props.items.find(elem => elem.value === value) || props.items[0]
+    setTab(newTab)
+    history.replace(newTab.path)
   }
 
-  const useStyles = makeStyles((theme: Theme) => ({
-    header: {
-      width: '100%',
-    },
-  }))
-  const classes = useStyles()
   return (
     <>
-      <div>
+      {/* <div>
         <img src='images/header.jpg' />
-      </div>
+      </div> */}
+      <Navbar items={props.items} changeTab={changeTab} selectedTab={tab} />
       <SearchComponent changeSearch={(value?: string) => props.changeSearch && props.changeSearch(value)} />
     </>
   )

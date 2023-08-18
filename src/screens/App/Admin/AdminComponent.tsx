@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Theme, Grid,
 } from '@mui/material'
@@ -11,11 +11,10 @@ import TimelineConnector from '@mui/lab/TimelineConnector'
 import TimelineContent from '@mui/lab/TimelineContent'
 import TimelineDot from '@mui/lab/TimelineDot'
 
-import TimelineElement from '../Dashboard/TimelineElement'
-import TimelineDotComponent from '../Dashboard/TimelineDotComponent'
 import TimelineElementEditor from './TimelineElementEditor'
-
-import { DotObject } from '../Dashboard/DashboardComponent'
+import TimelineElement from '../Events/TimelineElement'
+import TimelineDotComponent from '../Events/TimelineDotComponent'
+import { DotObject } from '../Events/EventComponent'
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -33,6 +32,12 @@ const AdminComponent: React.FC<Props> = (props) => {
 
   const [data, setData] = useState<DotObject[]>(props.data)
   const [selectedElement, setSelectedElement] = useState<DotObject | undefined>(props.data.find((element: DotObject) => element.active === true))
+
+  useEffect(() => {
+    if (props.data) {
+      setData(props.data)
+    }
+  }, [props.data])
 
   const changeActiveElement = (element?: DotObject) => {
     const newData: DotObject[] = []

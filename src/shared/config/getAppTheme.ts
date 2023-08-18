@@ -12,6 +12,10 @@ export function getAppTheme (): Theme {
       secondary: {
         main: '#d1d1d1',
       },
+      background: {
+        default: '#ebebeb',
+        paper: '#ffffff',
+      },
     },
   }
 
